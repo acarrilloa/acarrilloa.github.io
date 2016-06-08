@@ -1,0 +1,5 @@
+site_name: Documentos de la CTpd
+pages:
+ - Inicio: index.md
+ - Arquitectura: Arquitectura_Caso_1.md
+theme: bootstrap
