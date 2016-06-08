@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Construcción - Documentos de la CTpd</title>
+
+        <link href="../css/bootstrap-3.0.3.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Documentos de la CTpd</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">Inicio</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../Arquitectura_Caso_1/">Arquitectura</a>
+                </li>
+            
+            
+            
+                <li class="active">
+                    <a href="./">Construcción</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a rel="next" href="../Arquitectura_Caso_1/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#construccion-de-la-pdc-del-caso-1">Construcción de la PdC deL Caso 1</a></li>
+        
+            <li><a href="#componentes">Componentes</a></li>
+        
+            <li><a href="#redes">Redes</a></li>
+        
+            <li><a href="#recursos-de-infraestructura">Recursos de infraestructura</a></li>
+        
+            <li><a href="#opennebula">OpenNebula</a></li>
+        
+            <li><a href="#onos-telcaria">ONOS (Telcaria)</a></li>
+        
+            <li><a href="#ensamblaje-del-bastidor">Ensamblaje del bastidor</a></li>
+        
+            <li><a href="#instalacion-de-los-programas">Instalación de los programas</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="_1"><img src="./media/image1.png" width="521" height="451" /></h1>
+<p><strong>Tabla de ilustraciones</strong></p>
+<p><a href="#_Toc453069329"><em>Ilustración 13 Esquema del caso 1</em> 2</a></p>
+<p><a href="#_Toc453069330"><em>Ilustración 14 Arquitectura de la maqueta</em> 3</a></p>
+<p><span id="_Toc421012022" class="anchor"></span></p>
+<h1 id="construccion-de-la-pdc-del-caso-1">Construcción de la PdC deL Caso 1</h1>
+<p>El caso base que vamos a construir y que será la implementación de referencia, comprende los siguientes fundamentos:</p>
+<ul>
+<li>
+<p>Está desarrollada con componentes de código abierto</p>
+</li>
+<li>
+<p>Es un sistema integrado que está completo para someter a pruebas de campo</p>
+</li>
+<li>
+<p>Va a ejercitar todas las funcionalidades para las que se ha diseñado</p>
+</li>
+</ul>
+<p><img src="./media/image2.png" width="548" height="308" /></p>
+<p><span id="_Toc453069329" class="anchor"></span>Ilustración Esquema del caso 1</p>
+<p>La arquitectura convencional de CTpd será simplificada en el objetivo de validar el diseño de esta implementación. Esta sección describe los componentes involucrados en este diseño.</p>
+<h3 id="componentes"><span id="h.pk4fngbq7bxd" class="anchor"><span id="_Toc453070005" class="anchor"></span></span>Componentes</h3>
+<p><img src="./media/image41.png" width="548" height="419" /></p>
+<p><span id="_Toc453069330" class="anchor"></span>Ilustración Arquitectura de la maqueta</p>
+<p>En la <em>Ilustración 14</em> podemos identificar los componentes de la prueba de concepto, que están a su vez detallados en la <em>Tabla 1</em>.</p>
+<p>Tabla 1 Componentes de la prueba de concepto</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombre</strong></td>
+<td><strong>Tipo</strong></td>
+<td><strong>Descripción</strong></td>
+</tr>
+<tr>
+<td>Nodos de Computación</td>
+<td>Nodo Físico</td>
+<td>2 Nodos Físicos. Todas las VLANs están conectadas a ambos nodos. Exceptio la red de Cliente que solo está conectada a <em>test-oln-hn-01</em>.</td>
+</tr>
+<tr>
+<td>ONE</td>
+<td>Máquina Virtual</td>
+<td>Instalación de OpenNebula y de OneFlow. Responsable del despliegue de la MVs y de delegar la configuración de red en ONOS..</td>
+</tr>
+<tr>
+<td>ONOS</td>
+<td>Máquina Virtual</td>
+<td>Instalación del SDN ONOS. Las siguientes aplicaciones estarán desplegadas:</td>
+</tr>
+<tr>
+<td>AAA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OLT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FWD</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>VR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>vOLT</td>
+<td>Máquina Virtual</td>
+<td>Esta MV actúa como el punto de entrada del tráfico del cliente al CTpd. Dispone de una instancia de Open vSwitch que está controlado por ONOS y que enrruta el tráfico al tejido CLOS.</td>
+</tr>
+<tr>
+<td>Ya que está MV está conectada a la red del Cliente deberá ser ejecutada en <em>test-oln-hn-01</em>.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CLOS</td>
+<td>Máquina Virtual</td>
+<td>Una instancia de mininet que simula el tejido CLOS.</td>
+</tr>
+<tr>
+<td>DNS</td>
+<td>Máquina Virtual</td>
+<td>Servicio DNS.</td>
+</tr>
+<tr>
+<td>Portal Cautivo</td>
+<td>Máquina Virtual</td>
+<td>El servicio Telco 3.0, que estará conectado a la base de datos de los usuarios y determinará si un cliente tiene acceso o no a internet.</td>
+</tr>
+<tr>
+<td>vErC</td>
+<td>Máquina Virtual</td>
+<td>Enrutador de la Central. Provee acceso a internet.</td>
+</tr>
+<tr>
+<td>vPdC</td>
+<td>Máquina Virtual</td>
+<td>Pasarela de Cliente. Esta MV será instanciada por OneFlow para cada cliente e implementará los servicios básicos de conectividad: configuración DNS, DHCP y anuncio de prefijos IPv6.</td>
+</tr>
+<tr>
+<td>Bridge de red de Cliente</td>
+<td>Bridge de Linux</td>
+<td>Este bridge está conectado a un HGU (Home Gateway Unit) que generará el tráfico de Cliente. Se trata de una red puramente ethernet/L2 que está conectada al vOLT.</td>
+</tr>
+<tr>
+<td>Bridge de red de Servicio</td>
+<td>Bridge de Linux</td>
+<td>La red interna de Servicios.</td>
+</tr>
+<tr>
+<td>Bridge de red de Gestión</td>
+<td>Bridge de Linux</td>
+<td>Todas las MVs estarán conectadas a la red de Gestión de a través de este bridge.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="redes"><span id="h.ctm7mki7vl0l" class="anchor"><span id="_Toc453070006" class="anchor"></span></span>Redes</h3>
+<p>Existen varias redes utilizadas en este proyecto, que están detalladas en la <em>Tabla 2</em>.</p>
+<p>Tabla Redes de la Prueba de Concepto</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombre</strong></td>
+<td><strong>VLAN</strong></td>
+<td><strong>Tipo/Direccionamiento</strong></td>
+<td><strong>Descripción</strong></td>
+</tr>
+<tr>
+<td>Gestión (OLN_MGMT)</td>
+<td>302</td>
+<td>Ethernet L2</td>
+<td>Red de Gestión para todas las MVs de la maqueta.</td>
+</tr>
+<tr>
+<td>Cliente (OLN_CLI)</td>
+<td>304</td>
+<td>IPv6 2a02:9008:4:b110::/64</td>
+<td>Red de Cliente.</td>
+</tr>
+<tr>
+<td>Servicio (OLN_SRV)</td>
+<td>303</td>
+<td>IPv4</td>
+<td></td>
+</tr>
+<tr>
+<td>10.95.84.0/26</td>
+<td>Red de Servicio, usada por los servicios internos del CLOS.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Provisión (OLN_PROV)</td>
+<td></td>
+<td>Ethernet L2</td>
+<td>Red que conecta el OLT con el portal Cautivo previa la inicialización de un cliente</td>
+</tr>
+</tbody>
+</table>
+<h3 id="recursos-de-infraestructura"><span id="h.51htvswwprl3" class="anchor"><span id="_Toc453070007" class="anchor"></span></span>Recursos de infraestructura</h3>
+<p>Los recursos de Hardware utilizados en esta prueba de concepto están descritos en la <em>Tabla 3</em>.</p>
+<p>Tabla Infraestructura de la prueba</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombre</strong></td>
+<td><strong>Descripción</strong></td>
+</tr>
+<tr>
+<td>test-oln-cn-01</td>
+<td>Nodo de Computación que será utilizado como un hipervisor de OpenNebula, utilizando la tecnología KVM como herramienta de virtualización.</td>
+</tr>
+<tr>
+<td>CPU: 8x Intel(R) Xeon(R) CPU E5450 @ 3.00GHz                                                                                                                                                                                                                                                                                    Memoria: 16 GB                                                                                                                                                                                                                                                                                                                      Almacenamiento: 236 GB</td>
+<td></td>
+</tr>
+<tr>
+<td>test-oln-hn-01</td>
+<td>Nodo de Computación que será utilizado como un hipervisor de OpenNebula, utilizando la tecnología KVM como herramienta de virtualización.</td>
+</tr>
+<tr>
+<td>CPU: 8x Intel(R) Xeon(R) CPU E5450 @ 3.00GHz</td>
+<td></td>
+</tr>
+<tr>
+<td>Memoria: 32 GB</td>
+<td></td>
+</tr>
+<tr>
+<td>Almacenamiento: 224 GB</td>
+<td></td>
+</tr>
+<tr>
+<td>HGU</td>
+<td>Un Home Gateway Unit que generará y simulará el tráfico del Cliente. Estará conectado a la maqueta a través de la red del Cliente y del componente vOLT</td>
+</tr>
+<tr>
+<td>Soporte de Red</td>
+<td>La prueba de concepto tiene lugar en el seno de una red que particiona las VLANs 302, 303 y 304, y que a su vez provee enrutado para el acceso a internet.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="opennebula"><span id="h.i1otn9dplkzt" class="anchor"><span id="_Toc453070008" class="anchor"></span></span>OpenNebula</h2>
+<h3 id="diseno"><span id="h.mskitqtqyhjr" class="anchor"><span id="_Toc453070009" class="anchor"></span></span>Diseño</h3>
+<p>En la <em>Tabla 4</em> se muestra un resumen de la configuración del despliegue de OpenNebula.</p>
+<p>Tabla Recursos de infraestructura de ONE</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sistema Operativo</strong></td>
+<td>Ubuntu 14.04 tanto en el Front-end como en los nodos de computación.</td>
+</tr>
+<tr>
+<td><strong>Hipervisor</strong></td>
+<td>2 nodos de computación usando KVM.</td>
+</tr>
+<tr>
+<td><strong>Base de Datos</strong></td>
+<td>MySQL</td>
+</tr>
+<tr>
+<td><strong>Redes</strong></td>
+<td>Bridges de Linux y tecnología 802.1Q para la implementación de la segmentación por VLANs.</td>
+</tr>
+<tr>
+<td><strong>Almacenamiento</strong></td>
+<td>Almacenamiento local del Hipervisor. ~ 230 GB.</td>
+</tr>
+<tr>
+<td><strong>Autenticación</strong></td>
+<td>Nativo de OpenNebula</td>
+</tr>
+<tr>
+<td><strong>Interfaces</strong></td>
+<td>OneFlow, CLI, Sunstone</td>
+</tr>
+</tbody>
+</table>
+<p>Tanto la MV de OpenNebula como los nodos físicos de Computación han sido provisionados usando Ansible. El playbook está disponible aquí: <a href="https://github.com/Telefonica/ctpd/tree/master/ansible"><em>https://github.com/Telefonica/ctpd/tree/master/ansible</em></a>. Esto permitirá una reinstalación uniforme e idéntica en el futuro. Dado que este playbook contiene los detalles exactos de la provisión, para más detalles revisar este recurso.</p>
+<h4 id="front-end-de-opennebula">Front-end de OpenNebula</h4>
+<p>OpenNebula ha sido desplegada en una Máquina Virtual que está siendo ejecutada en el nodo <em>test-oln-cn-01</em>. Ha sido desplegada manualmente y configurada para exponer los siguientes servicios:</p>
+<ul>
+<li>
+<p>OpenNebula 4.14.2 (oned)</p>
+</li>
+<li>
+<p>Planificador (mm_sched)</p>
+</li>
+<li>
+<p>OneFlow (oneflow-server)</p>
+</li>
+<li>
+<p>Sunstone (sunstone-server)</p>
+</li>
+<li>
+<p>Línea de Comandos de Linux</p>
+</li>
+</ul>
+<p>Actualmente solo se ha desplegado un único Front-end, por lo que no hay Alta Disponibilidad. Sin embargo el entorno está preparado para configurarse en modo de Alta Disponibilidad tras desplegar un segundo nodo de Front-end.</p>
+<h4 id="nodos-de-computacion">Nodos de Computación</h4>
+<p>Los nodos de computación son responsables de proveer a las Máquinas Virtuales con los recursos necesario (por ejemplo CPU, Memoria, acceso a la red). OnLife es homogénea en cuanto a la tecnología utilizada para virtualizar, manejando 2 nodos con el hipervisor KVM. La configuración de los nodos también es homogénea en término de componentes de software instalados.</p>
+<p>Para los nodos de computación se han instalado el siguiente software:</p>
+<ul>
+<li>
+<p>Libvirt y qemu-kvm</p>
+</li>
+<li>
+<p>Paquete de nodo de OpenNebula 4.14.2 KVM</p>
+</li>
+<li>
+<p>El usuario <em>oneadmin</em> tiene acceso de administración al almacenamiento, redes y virtualización.</p>
+</li>
+<li>
+<p>Conexión SSH sin password entre los nodos y el Front-end.</p>
+</li>
+<li>
+<p>Ruby instalado (utilizado por las sondas y drivers de OpenNebula)</p>
+</li>
+</ul>
+<h4 id="almacenamiento">Almacenamiento</h4>
+<p>OnLife utilizará el almacenamiento local disponible en los nodos, usando el driver SSH. Esto significa que no se ha implementado ninguna configuración específica para el almacenamiento.</p>
+<h4 id="redes_1">Redes</h4>
+<p>Todavía por determinar.</p>
+<h4 id="autenticacion">Autenticación</h4>
+<p>Los usuarios se mantendrán en la base de datos de OpenNebula, como usuarios nativos, y la autenticación se realizará mediante usuario/password.</p>
+<h3 id="configuracion-del-front-end"><span id="h.649i348jjcn7" class="anchor"><span id="_Toc453070010" class="anchor"></span></span>Configuración del Front-end</h3>
+<p>OpenNebula se ha instalado y configurado para ejecutar los servicios básicos de OpenNebula: <em>oned</em>, el planificador <em>mm_sched</em>, <em>OneFlow</em> y <em>Sunstone</em>).</p>
+<p>El sistema operativo es Ubuntu 14.04 obtenido directamente de los repositorios de Ubuntu.</p>
+<p>En la <em>Tabla 5</em> se detallan las modificaciones a los ficheros de configuración pertenecientes a OpenNebula.</p>
+<p>Tabla . Resumen de los cambios de configuración de OpenNebula (relativos a /etc/one)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fichero de Configuración</strong></td>
+<td><strong>Descripción</strong></td>
+</tr>
+<tr>
+<td>oned.conf</td>
+<td># Sample configuration for MySQL</td>
+</tr>
+</tbody>
+</table>
+<p>DB = [ backend = "mysql",                                                                        server = "localhost",                                                                           <br />
+port = 0,                                                                                       <br />
+user = "oneadmin",                                                                              <br />
+passwd = "opennebula",                                                                          <br />
+db_name = "opennebula" ]         |
+| sunstone-server.conf         | :host: 0.0.0.0                    |</p>
+<h3 id="configuracion-de-los-nodos-de-computacion"><span id="h.mwpyv2xo6c0v" class="anchor"><span id="_Toc453070011" class="anchor"></span></span>Configuración de los Nodos de Computación</h3>
+<p>Los nodos de computación han sido provisionados siguiendo este procedimiento:</p>
+<ul>
+<li>
+<p>Habilitar el repositorio de OpenNebula.</p>
+</li>
+<li>
+<p>Instalación del paquete <em>opennebula-node</em>.</p>
+</li>
+</ul>
+<p>Los ficheros de configuración alterados durante la instalación están descritos en la <em>Tabla 6.</em></p>
+<p>Tabla Resumen de los cambios en los ficheros de configuración</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fichero de Configuración</strong></td>
+<td><strong>Descripción</strong></td>
+</tr>
+<tr>
+<td>/etc/apparmor.d/abstractions/libvirt-qemu</td>
+<td>/srv/** rw,</td>
+</tr>
+</tbody>
+</table>
+<pre><code>                                         /var/lib/one/datastores/\*\* rw  |
+</code></pre>
+<h3 id="imagenes-y-templates"><span id="h.ka0blqafhfq7" class="anchor"><span id="_Toc453070012" class="anchor"></span></span>Imágenes y Templates</h3>
+<p>Se hará disponible una única imagen en la Nube de OpenNebula: una Ubuntu 14.04. Esta imagen será utilizada como Sistema Operativo para todas las Máquinas Virtuales y servicios que se utilizarán en esta maqueta: vOLT, ONOS, Portal Cautivo, etc.</p>
+<p>Cuando se despliegue un nuevo servicio basado en una Máquina Virtual, la imagen de base deberá ser clonada y convertida en persistente. A su vez se deberá de crear un nuevo template referenciando esa imagen. Opcionalmente las IPs se podrán listar de manera específica en el template de forma que un mismo servicio siempre tenga la misma IP.</p>
+<h3 id="nodos-clusters-vdcs"><span id="h.70wqua572meo" class="anchor"><span id="_Toc453070013" class="anchor"></span></span>Nodos / Clusters / VDCs</h3>
+<p>Los dos nodos de KVM son homogéneos. No se crearán clusters y todos los recursos serán incluidos en el VDC por defecto. Los dos nodos registrados en la nube no disponen de la misma capacidad, sin embargo OpenNebula monitorizará la capacidad disponible y escogerá dónde desplegar cada Máquina Virtual.</p>
+<p>El nodo <em>test-oln-hn-01</em> es el único conectado a la red <em>OLN_CLI,</em> por lo que la Máquina Virtual de vOLT deberá ser ejecutada en este nodo específicamente.</p>
+<h3 id="almacenamiento-y-datastores"><span id="h.fqy2jozcrsyf" class="anchor"><span id="_Toc453070014" class="anchor"></span></span>Almacenamiento y Datastores</h3>
+<p>El storage por defecto será local en los nodos de Computación. Por lo tanto, tanto el Datastore de Sistema como el de Imágenes deberán utilizar TM_MAD="ssh". Las imágenes serán almacenadas en formato Qcow2.</p>
+<h3 id="redes-virtuales"><span id="h.fdj635k143hc" class="anchor"><span id="_Toc453070015" class="anchor"></span></span>Redes Virtuales.</h3>
+<p>Por determinar.</p>
+<h3 id="usuarios-y-grupos"><span id="h.p8l5h3v5p9n1" class="anchor"><span id="_Toc453070016" class="anchor"></span></span>Usuarios y Grupos</h3>
+<p>Existirá un único usuario: <em>oneadmin</em>, al cual le pertenecerán todos los recursos.</p>
+<h2 id="onos-telcaria"><span id="h.kpizvyontccm" class="anchor"><span id="_Toc453070017" class="anchor"></span></span>ONOS (Telcaria)</h2>
+<h3 id="_2"></h3>
+<h2 id="ensamblaje-del-bastidor">Ensamblaje del bastidor</h2>
+<p>Estas son las instrucciones esquematizadas para armar el bastidor, en los repositorios <em>github</em> referenciados se encuentran las instrucciones detalladas. El bastidor de la prueba ya vendrá con la infraestructura ensamblada de origen y los programas precargados en la planta de ensamblaje del suministrador.</p>
+<p><strong><span style="font-variant:small-caps;">Infraestructura</span></strong></p>
+<p>Los servidores, conmutadores y bandejas de acceso se pueden ensamblar en varias configuraciones virtuales como se ilustra a seguir</p>
+<p><embed src="./media/image4.emf" width="587" height="287" /></p>
+<p><em>Describir circuito de control y administración basado en el OCP/OCS de Microsoft</em></p>
+<h2 id="instalacion-de-los-programas">Instalación de los programas</h2>
+<p>La instalación de los programas que conforman el sistema se hará en el orden descrito a continuación</p>
+<ul>
+<li>
+<p>OpenNebula</p>
+</li>
+<li>
+<p>ONOS-CTpd</p>
+</li>
+<li>
+<p>ONOS-Tejido</p>
+</li>
+<li>
+<p>OpenMano + OneFlow</p>
+</li>
+</ul>
+<p><em>Instalación de OpenNebula</em></p>
+<p>Las instrucciones para instalar OpenNebula se encuentran en esta dirección IP</p>
+<p><a href="http://docs.opennebula.org/4.14/design_and_installation/building_your_cloud/ignc.html"><em>http://docs.opennebula.org/4.14/design_and_installation/building_your_cloud/ignc.html</em></a></p>
+<p>y se puede descargar desde este sitio</p>
+<p><a href="http://downloads.opennebula.org/packages/opennebula-4.14.2/"><em>http://downloads.opennebula.org/packages/opennebula-4.14.2/</em></a></p>
+<p>La instalación sería la siguiente:</p>
+<ul>
+<li>
+<p># wget -q -O- <a href="http://downloads.opennebula.org/repo/Ubuntu/repo.key"><em>http://downloads.opennebula.org/repo/Ubuntu/repo.key</em></a> | apt-key add -</p>
+</li>
+<li>
+<p># echo "deb <a href="http://downloads.opennebula.org/repo/4.12/Ubuntu/14.04/"><em>http://downloads.opennebula.org/repo/4.12/Ubuntu/14.04/</em></a> stable opennebula" \   &gt; /etc/apt/sources.list.d/opennebula.list</p>
+</li>
+<li>
+<p># apt-get update</p>
+</li>
+<li>
+<p># apt-get install opennebula opennebula-sunstone nfs-kernel-server</p>
+</li>
+<li>
+<p>Cambiar en el Fichero /etc/one/sunstone-server.conf  “:host: 127.0.0.1” por  “:host: 0.0.0.0”</p>
+</li>
+<li>
+<p># /etc/init.d/opennebula-sunstone restart</p>
+</li>
+<li>
+<p>Añadir al Fichero vi /etc/exports file  “/var/lib/one/ *(rw,sync,no_subtree_check,root_squash)”</p>
+</li>
+<li>
+<p># service nfs-kernel-server restart</p>
+</li>
+<li>
+<p># su - oneadmin</p>
+</li>
+<li>
+<p>$ cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys</p>
+</li>
+<li>
+<p>$ cat &lt;&lt; EOT &gt; ~/.ssh/config</p>
+</li>
+<li>
+<p>Host *</p>
+</li>
+<li>
+<p>StrictHostKeyChecking no</p>
+</li>
+<li>
+<p>UserKnownHostsFile /dev/null</p>
+</li>
+<li>
+<p>EOT</p>
+</li>
+<li>
+<p>$ chmod 600 ~/.ssh/config</p>
+</li>
+<li>
+<p># wget -q -O- <a href="http://downloads.opennebula.org/repo/Ubuntu/repo.key"><em>http://downloads.opennebula.org/repo/Ubuntu/repo.key</em></a> | apt-key add -</p>
+</li>
+<li>
+<p># echo "deb <a href="http://downloads.opennebula.org/repo/4.12/Ubuntu/14.04/"><em>http://downloads.opennebula.org/repo/4.12/Ubuntu/14.04/</em></a> stable opennebula" &gt; \     /etc/apt/sources.list.d/opennebula.list</p>
+</li>
+<li>
+<p># apt-get update</p>
+</li>
+<li>
+<p># apt-get install opennebula-node nfs-common bridge-utils</p>
+</li>
+<li>
+<p>Configurar fichero red: /etc/network/interfaces</p>
+</li>
+<li>
+<p>auto lo</p>
+</li>
+<li>
+<p>iface lo inet loopback</p>
+</li>
+<li>
+<p>auto br0</p>
+</li>
+<li>
+<p>iface br0 inet dhcp</p>
+</li>
+<li>
+<p>bridge_ports eth0</p>
+</li>
+<li>
+<p>bridge_fd 9</p>
+</li>
+<li>
+<p>bridge_hello 2</p>
+</li>
+<li>
+<p>bridge_maxage 12</p>
+</li>
+<li>
+<p>bridge_stp off</p>
+</li>
+<li>
+<p># /etc/init.d/networking restart</p>
+</li>
+<li>
+<p># cat &lt;&lt; EOT &gt; /etc/libvirt/qemu.conf</p>
+</li>
+<li>
+<p>user  = "oneadmin"</p>
+</li>
+<li>
+<p>group = "oneadmin"</p>
+</li>
+<li>
+<p>dynamic_ownership = 0</p>
+</li>
+<li>
+<p>EOT</p>
+</li>
+<li>
+<p># service libvirt-bin restart</p>
+</li>
+</ul>
+<p>Con esta ejecución se puede acceder al portal de OpenNebula en la URL:  <a href="http://IP:9869"><em>http://IP:9869</em></a>. La password de oneadmin está en el fichero  ~/.one/one_auth.</p>
+<p><em>Instalación de ONOS</em></p>
+<p>Las instrucciones para instalar ONOS se encuentran en esta dirección IP, empezando en el punto 2. de las mismas</p>
+<p><a href="https://wiki.onosproject.org/display/ONOS/ONOS+from+Scratch"><em>https://wiki.onosproject.org/display/ONOS/ONOS+from+Scratch</em></a></p>
+<p>Pero las instrucciones se modificaron de esta manera:</p>
+<p><strong>Instala <em>Git</em>:</strong></p>
+<p>$sudo apt-get install git-core</p>
+<p><strong>Descarga <em>Karaf</em> y <em>Maven</em>:</strong></p>
+<p>Create two directories called ~/Downloads and ~/Applications. Download the <a href="http://download.nextag.com/apache/karaf/3.0.5/apache-karaf-3.0.5.tar.gz"><em>Karaf 3.0.5</em></a> and <a href="http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz"><em>Maven 3.3.9</em></a> binaries (the tar.gz versions of both) into ~/Downloads and extract it to ~/Applications. Keep the tar archives in ~/Downloads; we'll need that later.</p>
+<p>| Si decides utilizar directorios distintos, como se puede ver a continuación, entonces tendrás que editar el fichero ~/onos/tools/dev/bash_profile (en el caso de la raspberry pi es /home/pi/onos/tools/dev/bash_profile) y cambiar la configuración allí. </p>
+<p>$ mkdir Downloads                                                                                                                                                                                                                                             </p>
+<p>$ mkdir /opt/Apps                                                                                                                                                                                                                                             </p>
+<p>$ cd Downloads                                                                                                                                                                                                                                                </p>
+<p>$ wget <a href="http://archive.apache.org/dist/karaf/3.0.5/apache-karaf-3.0.5.tar.gz"><em>http://archive.apache.org/dist/karaf/3.0.5/apache-karaf-3.0.5.tar.gz</em></a>                                                                                                         </p>
+<p>$ wget <a href="http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz"><em>http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz</em></a>                                                               </p>
+<p>$ tar -zxvf apache-karaf-3.0.5.tar.gz -C /opt/Apps/                                                                                                                                                                                                           </p>
+<table>
+<thead>
+<tr>
+<th>$ tar -zxvf apache-maven-3.3.9-bin.tar.gz -C /opt/Apps/</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<p><strong>Instala <em>java8</em>:</strong></p>
+<p>$ sudo apt-get install software-properties-common -y</p>
+<p>$ sudo add-apt-repository ppa:webupd8team/java -y</p>
+<p>$ sudo apt-get update</p>
+<p>$ sudo apt-get install oracle-java8-installer oracle-java8-set-default -y</p>
+<p>En el caso de que no funcionara, descarga manualmente java (<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"><em>http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</em></a>)</p>
+<p>E instálalo:</p>
+<p>$sudo update-alternatives --install "/usr/bin/java" "java" "/opt/Apps/jdk1.8.0_77/bin/java" 1</p>
+<p>$sudo update-alternatives --install "/usr/bin/javac" "javac" "/opt/Apps/jdk1.8.0_77/bin/javac" 1</p>
+<p>$sudo update-alternatives --set java /opt/Apps/jdk1.8.0_77/bin/java</p>
+<p>$sudo update-alternatives --set javac /opt/Apps/jdk1.8.0_77/bin/javac</p>
+<p>Más info en: <a href="http://www.rpiblog.com/2014/03/installing-oracle-jdk-8-on-raspberry-pi.html"><em>http://www.rpiblog.com/2014/03/installing-oracle-jdk-8-on-raspberry-pi.html</em></a></p>
+<p><strong>Descarga ONOS:</strong></p>
+<p>$git clone <a href="https://gerrit.onosproject.org/onos"><em>https://gerrit.onosproject.org/onos</em></a></p>
+<p>A partir de ahora suponemos que ONOS está instalado en el home del usuario, e.g. /home/pi/onos</p>
+<p><strong>Incluye las siguientes lineas en el fichero <em>.bashrc</em>:</strong></p>
+<p>. ~/onos/tools/dev/bash_profile</p>
+<p>export ONOS_ROOT=~/onos</p>
+<p>source $ONOS_ROOT/tools/dev/bash_profile</p>
+<p><strong>Ejecuta el <em>bash</em> para que se carguen:</strong></p>
+<p>$bash</p>
+<p><strong>Comprueba que se han cargado correctamente:</strong></p>
+<p>$ echo $ONOS_ROOT</p>
+<p>/home/pi/onos</p>
+<p>$ echo $KARAF_ROOT</p>
+<p>/opt/Apps/apache-karaf-3.0.5</p>
+<p><strong>Configura la instalación:</strong></p>
+<p>Edita el fichero de configuración:</p>
+<p>$sudo nano /opt/Apps/apache-karaf-3.0.5/etc/org.apache.karaf.features.cfg</p>
+<p>Incluye el siguiente texto en la sección de <em>featuresRepositories:</em></p>
+<p>mvn:org.onosproject/onos-features/1.5.0-SNAPSHOT/xml/features</p>
+<p><strong>Compila con <em>maven</em> ONOS:</strong></p>
+<p>$cd ~/onos</p>
+<p>$ mvn clean install  # or use the alias 'mci'</p>
+<p>Si todo ha ido bien debería compilarse entero, si tienes problemas, aquí hay posibles soluciones:</p>
+<ul>
+<li>
+<p>Actualizar java a la última versión disponible</p>
+</li>
+<li>
+<p>No hay forma de compilar onos-incubator-rpc-grpc, por lo que la única opción es no hacerlo, para ello basta con comentar la siguiente línea en el fichero ~/onos/incubator/pom.xml</p>
+</li>
+</ul>
+<blockquote>
+<p>&lt;!--</p>
+<p>&lt;module&gt;rpc-grpc&lt;/module&gt;</p>
+<p>--&gt;</p>
+</blockquote>
+<p><strong>Ahora hay que construir ONOS:</strong></p>
+<p><a href="https://wiki.onosproject.org/display/ONOS/Running+ONOS+locally+on+development+machine"><em>https://wiki.onosproject.org/display/ONOS/Running+ONOS+locally+on+development+machine</em></a></p>
+<p>$cd /home/pi/onos/tools/build</p>
+<p>$onos-build</p>
+<p><strong>Ejecutar ONOS:</strong></p>
+<p>$onos-karaf</p>
+<p><strong>Para acceder vía web:</strong></p>
+<p><a href="http://192.168.0.200:8181/onos/ui/login.html#/topo"><em>http://192.168.0.200:8181/onos/ui/login.html#/topo</em></a></p>
+<p>karaf/karaf</p>
+<p>onos/rocks</p>
+<p>Antes de que se me olvide, al intentar instalar mininet dice esto (hay que comprobar que funciona para CentOS):</p>
+<p>Install.sh currently only supports Ubuntu, Debian, RedHat and Fedora.</p></div>
+        </div>
+
+	<footer class="col-md-12">
+		<hr>
+		
+		<p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+	</footer>
+
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script src="../js/base.js"></script>
+    </body>
+</html>
