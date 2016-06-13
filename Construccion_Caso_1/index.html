@@ -101,6 +101,24 @@
         
             <li><a href="#opennebula">OpenNebula</a></li>
         
+            <li><a href="#diseno">Diseño</a></li>
+        
+            <li><a href="#configuracion-del-front-end">Configuración del Front-end</a></li>
+        
+            <li><a href="#configuracion-de-los-nodos-de-computacion">Configuración de los Nodos de Computación</a></li>
+        
+            <li><a href="#imagenes">Imágenes</a></li>
+        
+            <li><a href="#nodos-clusters-vdcs">Nodos / Clusters / VDCs</a></li>
+        
+            <li><a href="#almacenamiento-y-datastores">Almacenamiento y Datastores</a></li>
+        
+            <li><a href="#redes-virtuales">Redes Virtuales.</a></li>
+        
+            <li><a href="#usuarios-y-grupos">Usuarios y Grupos</a></li>
+        
+            <li><a href="#servicios-maquinas-virtuales-y-templates">Servicios: Máquinas Virtuales y Templates</a></li>
+        
             <li><a href="#onos-telcaria">ONOS (Telcaria)</a></li>
         
             <li><a href="#ensamblaje-del-bastidor">Ensamblaje del bastidor</a></li>
@@ -132,12 +150,11 @@
 </ul>
 <p><img src="./media/image2.png" width="548" height="308" /></p>
 <p><span id="_Toc453069329" class="anchor"></span>Ilustración Esquema del caso 1</p>
-<p>La arquitectura convencional de CTpd será simplificada en el objetivo de validar el diseño de esta implementación. Esta sección describe los componentes involucrados en este diseño.</p>
-<h3 id="componentes"><span id="h.pk4fngbq7bxd" class="anchor"><span id="_Toc453070005" class="anchor"></span></span>Componentes</h3>
+<p>La arquitectura convencional de CTpd ha sido simplificada en el objetivo de validar el diseño de esta implementación. Esta sección describe los componentes involucrados en este diseño.</p>
+<h2 id="componentes"><span id="h.pk4fngbq7bxd" class="anchor"><span id="_Toc453070005" class="anchor"></span></span>Componentes</h2>
 <p><img src="./media/image41.png" width="548" height="419" /></p>
 <p><span id="_Toc453069330" class="anchor"></span>Ilustración Arquitectura de la maqueta</p>
 <p>En la <em>Ilustración 14</em> podemos identificar los componentes de la prueba de concepto, que están a su vez detallados en la <em>Tabla 1</em>.</p>
-<p>Tabla 1 Componentes de la prueba de concepto</p>
 <table>
 <thead>
 <tr>
@@ -165,37 +182,12 @@
 <tr>
 <td>ONOS</td>
 <td>Máquina Virtual</td>
-<td>Instalación del SDN ONOS. Las siguientes aplicaciones estarán desplegadas:</td>
-</tr>
-<tr>
-<td>AAA</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>OLT</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>FWD</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>VR</td>
-<td></td>
-<td></td>
+<td>Instalación del SDN ONOS. Las siguientes aplicaciones estarán desplegadas: <br />AAA <br />OLT <br />FWD <br />VR</td>
 </tr>
 <tr>
 <td>vOLT</td>
 <td>Máquina Virtual</td>
-<td>Esta MV actúa como el punto de entrada del tráfico del cliente al CTpd. Dispone de una instancia de Open vSwitch que está controlado por ONOS y que enrruta el tráfico al tejido CLOS.</td>
-</tr>
-<tr>
-<td>Ya que está MV está conectada a la red del Cliente deberá ser ejecutada en <em>test-oln-hn-01</em>.</td>
-<td></td>
-<td></td>
+<td>Esta MV actúa como el punto de entrada del tráfico del cliente al CTpd. Dispone de una instancia de Open vSwitch que está controlado por ONOS y que enrruta el tráfico al tejido CLOS.  <br />Ya que está MV está conectada a la red del Cliente deberá ser ejecutada en <em>test-oln-hn-01</em>.</td>
 </tr>
 <tr>
 <td>CLOS</td>
@@ -239,9 +231,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="redes"><span id="h.ctm7mki7vl0l" class="anchor"><span id="_Toc453070006" class="anchor"></span></span>Redes</h3>
+<p><strong>Tabla 1.</strong> Componentes de la prueba de concepto</p>
+<h2 id="redes"><span id="h.ctm7mki7vl0l" class="anchor"><span id="_Toc453070006" class="anchor"></span></span>Redes</h2>
 <p>Existen varias redes utilizadas en este proyecto, que están detalladas en la <em>Tabla 2</em>.</p>
-<p>Tabla Redes de la Prueba de Concepto</p>
 <table>
 <thead>
 <tr>
@@ -267,20 +259,14 @@
 <tr>
 <td>Cliente (OLN_CLI)</td>
 <td>304</td>
-<td>IPv6 2a02:9008:4:b110::/64</td>
+<td>IPv6  <br />2a02:9008:4:b110::/64</td>
 <td>Red de Cliente.</td>
 </tr>
 <tr>
 <td>Servicio (OLN_SRV)</td>
 <td>303</td>
-<td>IPv4</td>
-<td></td>
-</tr>
-<tr>
-<td>10.95.84.0/26</td>
+<td>IPv4  <br />10.95.84.0/26</td>
 <td>Red de Servicio, usada por los servicios internos del CLOS.</td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>Provisión (OLN_PROV)</td>
@@ -290,9 +276,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="recursos-de-infraestructura"><span id="h.51htvswwprl3" class="anchor"><span id="_Toc453070007" class="anchor"></span></span>Recursos de infraestructura</h3>
+<p><strong>Tabla 2.</strong> Redes de la Prueba de Concepto</p>
+<h2 id="recursos-de-infraestructura"><span id="h.51htvswwprl3" class="anchor"><span id="_Toc453070007" class="anchor"></span></span>Recursos de infraestructura</h2>
 <p>Los recursos de Hardware utilizados en esta prueba de concepto están descritos en la <em>Tabla 3</em>.</p>
-<p>Tabla Infraestructura de la prueba</p>
 <table>
 <thead>
 <tr>
@@ -307,27 +293,11 @@
 </tr>
 <tr>
 <td>test-oln-cn-01</td>
-<td>Nodo de Computación que será utilizado como un hipervisor de OpenNebula, utilizando la tecnología KVM como herramienta de virtualización.</td>
-</tr>
-<tr>
-<td>CPU: 8x Intel(R) Xeon(R) CPU E5450 @ 3.00GHz                                                                                                                                                                                                                                                                                    Memoria: 16 GB                                                                                                                                                                                                                                                                                                                      Almacenamiento: 236 GB</td>
-<td></td>
+<td>Nodo de Computación que será utilizado como un hipervisor de OpenNebula, utilizando la tecnología KVM como herramienta de virtualización:                                                                                                                                                              <br /><em>CPU: 8x Intel(R) Xeon(R) CPU E5450 @ 3.00GHz</em>                                                                                                                                                                                                                                                                                 <br /><em>Memoria: 16 GB</em>                                                                                                                                                                                                                                                                                                                    <br /><em>Almacenamiento: 236 GB</em></td>
 </tr>
 <tr>
 <td>test-oln-hn-01</td>
-<td>Nodo de Computación que será utilizado como un hipervisor de OpenNebula, utilizando la tecnología KVM como herramienta de virtualización.</td>
-</tr>
-<tr>
-<td>CPU: 8x Intel(R) Xeon(R) CPU E5450 @ 3.00GHz</td>
-<td></td>
-</tr>
-<tr>
-<td>Memoria: 32 GB</td>
-<td></td>
-</tr>
-<tr>
-<td>Almacenamiento: 224 GB</td>
-<td></td>
+<td>Nodo de Computación que será utilizado como un hipervisor de OpenNebula, utilizando la tecnología KVM como herramienta de virtualización.                                                                                                                                                                                            <br /><em>CPU: 8x Intel(R) Xeon(R) CPU E5450 @ 3.00GHz</em>                                                                                                                                                                                                                                                                                      <br /><em>Memoria: 32 GB</em>                                                                                                                                                                                                                                                                                                                    <br /><em>Almacenamiento: 224 GB</em></td>
 </tr>
 <tr>
 <td>HGU</td>
@@ -337,12 +307,15 @@
 <td>Soporte de Red</td>
 <td>La prueba de concepto tiene lugar en el seno de una red que particiona las VLANs 302, 303 y 304, y que a su vez provee enrutado para el acceso a internet.</td>
 </tr>
+<tr>
+<td><strong>Tabla 3.</strong> Infraestructura de la prueba</td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h2 id="opennebula"><span id="h.i1otn9dplkzt" class="anchor"><span id="_Toc453070008" class="anchor"></span></span>OpenNebula</h2>
-<h3 id="diseno"><span id="h.mskitqtqyhjr" class="anchor"><span id="_Toc453070009" class="anchor"></span></span>Diseño</h3>
+<h2 id="diseno"><span id="h.mskitqtqyhjr" class="anchor"><span id="_Toc453070009" class="anchor"></span></span>Diseño</h2>
 <p>En la <em>Tabla 4</em> se muestra un resumen de la configuración del despliegue de OpenNebula.</p>
-<p>Tabla Recursos de infraestructura de ONE</p>
 <table>
 <thead>
 <tr>
@@ -379,10 +352,17 @@
 <td><strong>Interfaces</strong></td>
 <td>OneFlow, CLI, Sunstone</td>
 </tr>
+<tr>
+<td><strong> Tabla 4.</strong> Recursos de infraestructura de ONE</td>
+<td></td>
+</tr>
+<tr>
+<td>Tanto la MV de OpenNebula como los nodos físicos de Computación han sido provisionados usando Ansible. El playbook está disponible aquí: <a href="https://github.com/Telefonica/ctpd/tree/master/ansible"><em>https://github.com/Telefonica/ctpd/tree/master/ansible</em></a>. Esto permitirá una reinstalación uniforme e idéntica en el futuro. Dado que este playbook contiene los detalles exactos de la provisión, para más detalles revisar este recurso.</td>
+<td></td>
+</tr>
 </tbody>
 </table>
-<p>Tanto la MV de OpenNebula como los nodos físicos de Computación han sido provisionados usando Ansible. El playbook está disponible aquí: <a href="https://github.com/Telefonica/ctpd/tree/master/ansible"><em>https://github.com/Telefonica/ctpd/tree/master/ansible</em></a>. Esto permitirá una reinstalación uniforme e idéntica en el futuro. Dado que este playbook contiene los detalles exactos de la provisión, para más detalles revisar este recurso.</p>
-<h4 id="front-end-de-opennebula">Front-end de OpenNebula</h4>
+<h3 id="front-end-de-opennebula">Front-end de OpenNebula</h3>
 <p>OpenNebula ha sido desplegada en una Máquina Virtual que está siendo ejecutada en el nodo <em>test-oln-cn-01</em>. Ha sido desplegada manualmente y configurada para exponer los siguientes servicios:</p>
 <ul>
 <li>
@@ -402,7 +382,7 @@
 </li>
 </ul>
 <p>Actualmente solo se ha desplegado un único Front-end, por lo que no hay Alta Disponibilidad. Sin embargo el entorno está preparado para configurarse en modo de Alta Disponibilidad tras desplegar un segundo nodo de Front-end.</p>
-<h4 id="nodos-de-computacion">Nodos de Computación</h4>
+<h3 id="nodos-de-computacion">Nodos de Computación</h3>
 <p>Los nodos de computación son responsables de proveer a las Máquinas Virtuales con los recursos necesario (por ejemplo CPU, Memoria, acceso a la red). OnLife es homogénea en cuanto a la tecnología utilizada para virtualizar, manejando 2 nodos con el hipervisor KVM. La configuración de los nodos también es homogénea en término de componentes de software instalados.</p>
 <p>Para los nodos de computación se han instalado el siguiente software:</p>
 <ul>
@@ -422,13 +402,56 @@
 <p>Ruby instalado (utilizado por las sondas y drivers de OpenNebula)</p>
 </li>
 </ul>
-<h4 id="almacenamiento">Almacenamiento</h4>
+<h3 id="almacenamiento">Almacenamiento</h3>
 <p>OnLife utilizará el almacenamiento local disponible en los nodos, usando el driver SSH. Esto significa que no se ha implementado ninguna configuración específica para el almacenamiento.</p>
-<h4 id="redes_1">Redes</h4>
-<p>Todavía por determinar.</p>
-<h4 id="autenticacion">Autenticación</h4>
+<h3 id="redes_1">Redes</h3>
+<p>Las redes han sido implementadas de acuerdo con la Tabla 5.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombre</strong></td>
+<td><strong>Interfaz</strong></td>
+<td><strong>Bridge</strong></td>
+<td><strong>Notas</strong></td>
+</tr>
+<tr>
+<td>Gestión (OLN_MGMT)</td>
+<td>eth0</td>
+<td>br_mgmt</td>
+<td></td>
+</tr>
+<tr>
+<td>Servicio (OLN_SRV)</td>
+<td>eth1</td>
+<td>br_srv</td>
+<td></td>
+</tr>
+<tr>
+<td>Cliente (OLN_CLI)</td>
+<td>eth2</td>
+<td>br_cli</td>
+<td>Solo disponible en el node test-oln-hn-01.</td>
+</tr>
+<tr>
+<td>Provisión (OLN_PROV)</td>
+<td>-</td>
+<td>br_prov</td>
+<td>Solo disponible en el node test-oln-hn-01. Red sin soporte de interfaz físico.</td>
+</tr>
+</tbody>
+</table>
+<p><strong> Tabla 5.</strong> Implementación de las redes en los nodos</p>
+<h3 id="autenticacion">Autenticación</h3>
 <p>Los usuarios se mantendrán en la base de datos de OpenNebula, como usuarios nativos, y la autenticación se realizará mediante usuario/password.</p>
-<h3 id="configuracion-del-front-end"><span id="h.649i348jjcn7" class="anchor"><span id="_Toc453070010" class="anchor"></span></span>Configuración del Front-end</h3>
+<h2 id="configuracion-del-front-end"><span id="h.649i348jjcn7" class="anchor"><span id="_Toc453070010" class="anchor"></span></span>Configuración del Front-end</h2>
 <p>OpenNebula se ha instalado y configurado para ejecutar los servicios básicos de OpenNebula: <em>oned</em>, el planificador <em>mm_sched</em>, <em>OneFlow</em> y <em>Sunstone</em>).</p>
 <p>El sistema operativo es Ubuntu 14.04 obtenido directamente de los repositorios de Ubuntu.</p>
 <p>En la <em>Tabla 5</em> se detallan las modificaciones a los ficheros de configuración pertenecientes a OpenNebula.</p>
@@ -447,17 +470,15 @@
 </tr>
 <tr>
 <td>oned.conf</td>
-<td># Sample configuration for MySQL</td>
+<td># Sample configuration for MySQL<br />DB = [ backend = "mysql",<br />server = "localhost",<br />  port = 0,<br /> user = "oneadmin",<br />    passwd = "opennebula",<br />    db_name = "opennebula"]</td>
+</tr>
+<tr>
+<td>sunstone-server.conf</td>
+<td>:host: 0.0.0.0</td>
 </tr>
 </tbody>
 </table>
-<p>DB = [ backend = "mysql",                                                                        server = "localhost",                                                                           <br />
-port = 0,                                                                                       <br />
-user = "oneadmin",                                                                              <br />
-passwd = "opennebula",                                                                          <br />
-db_name = "opennebula" ]         |
-| sunstone-server.conf         | :host: 0.0.0.0                    |</p>
-<h3 id="configuracion-de-los-nodos-de-computacion"><span id="h.mwpyv2xo6c0v" class="anchor"><span id="_Toc453070011" class="anchor"></span></span>Configuración de los Nodos de Computación</h3>
+<h2 id="configuracion-de-los-nodos-de-computacion"><span id="h.mwpyv2xo6c0v" class="anchor"><span id="_Toc453070011" class="anchor"></span></span>Configuración de los Nodos de Computación</h2>
 <p>Los nodos de computación han sido provisionados siguiendo este procedimiento:</p>
 <ul>
 <li>
@@ -483,24 +504,157 @@ db_name = "opennebula" ]         |
 </tr>
 <tr>
 <td>/etc/apparmor.d/abstractions/libvirt-qemu</td>
-<td>/srv/** rw,</td>
+<td>/srv/** rw,                   <br />/var/lib/one/datastores/** rw</td>
 </tr>
 </tbody>
 </table>
-<pre><code>                                         /var/lib/one/datastores/\*\* rw  |
-</code></pre>
-<h3 id="imagenes-y-templates"><span id="h.ka0blqafhfq7" class="anchor"><span id="_Toc453070012" class="anchor"></span></span>Imágenes y Templates</h3>
-<p>Se hará disponible una única imagen en la Nube de OpenNebula: una Ubuntu 14.04. Esta imagen será utilizada como Sistema Operativo para todas las Máquinas Virtuales y servicios que se utilizarán en esta maqueta: vOLT, ONOS, Portal Cautivo, etc.</p>
-<p>Cuando se despliegue un nuevo servicio basado en una Máquina Virtual, la imagen de base deberá ser clonada y convertida en persistente. A su vez se deberá de crear un nuevo template referenciando esa imagen. Opcionalmente las IPs se podrán listar de manera específica en el template de forma que un mismo servicio siempre tenga la misma IP.</p>
-<h3 id="nodos-clusters-vdcs"><span id="h.70wqua572meo" class="anchor"><span id="_Toc453070013" class="anchor"></span></span>Nodos / Clusters / VDCs</h3>
+<h2 id="imagenes"><span id="h.ka0blqafhfq7" class="anchor"><span id="_Toc453070012" class="anchor"></span></span>Imágenes</h2>
+<p>Hay disponible una Ubuntu 14.04. Esta imagen será utilizada como Sistema Operativo para la mayoría de las Máquinas Virtuales y servicios que se utilizarán en esta maqueta: vOLT, ONOS, Portal Cautivo, etc.</p>
+<p>Cuando se despliegue un nuevo servicio basado en una Máquina Virtual, se deberá de crear un nuevo template referenciando esa imagen. Las IPs se podrán listar de manera específica en el template de forma que un mismo servicio siempre tenga la misma IP.</p>
+<p>En el caso particular de que el servicio necesite utilizar CentOS 6, existe asimismo una imagen de con esta distribución</p>
+<h2 id="nodos-clusters-vdcs"><span id="h.70wqua572meo" class="anchor"><span id="_Toc453070013" class="anchor"></span></span>Nodos / Clusters / VDCs</h2>
 <p>Los dos nodos de KVM son homogéneos. No se crearán clusters y todos los recursos serán incluidos en el VDC por defecto. Los dos nodos registrados en la nube no disponen de la misma capacidad, sin embargo OpenNebula monitorizará la capacidad disponible y escogerá dónde desplegar cada Máquina Virtual.</p>
 <p>El nodo <em>test-oln-hn-01</em> es el único conectado a la red <em>OLN_CLI,</em> por lo que la Máquina Virtual de vOLT deberá ser ejecutada en este nodo específicamente.</p>
-<h3 id="almacenamiento-y-datastores"><span id="h.fqy2jozcrsyf" class="anchor"><span id="_Toc453070014" class="anchor"></span></span>Almacenamiento y Datastores</h3>
-<p>El storage por defecto será local en los nodos de Computación. Por lo tanto, tanto el Datastore de Sistema como el de Imágenes deberán utilizar TM_MAD="ssh". Las imágenes serán almacenadas en formato Qcow2.</p>
-<h3 id="redes-virtuales"><span id="h.fdj635k143hc" class="anchor"><span id="_Toc453070015" class="anchor"></span></span>Redes Virtuales.</h3>
-<p>Por determinar.</p>
-<h3 id="usuarios-y-grupos"><span id="h.p8l5h3v5p9n1" class="anchor"><span id="_Toc453070016" class="anchor"></span></span>Usuarios y Grupos</h3>
-<p>Existirá un único usuario: <em>oneadmin</em>, al cual le pertenecerán todos los recursos.</p>
+<h2 id="almacenamiento-y-datastores"><span id="h.fqy2jozcrsyf" class="anchor"><span id="_Toc453070014" class="anchor"></span></span>Almacenamiento y Datastores</h2>
+<p>El almacenamiento por defecto será local en los nodos de Computación. Por lo tanto, tanto el Datastore de Sistema como el de Imágenes deberán utilizar TM_MAD="ssh". Las imágenes serán almacenadas en formato Qcow2.</p>
+<h2 id="redes-virtuales"><span id="h.fdj635k143hc" class="anchor"><span id="_Toc453070015" class="anchor"></span></span>Redes Virtuales.</h2>
+<p>En la <em>Tabla 7</em> se listan las redes virtuales existentes.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:<strong>OLN_MGMT</strong>:</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Bridge</strong></td>
+<td>br_prov</td>
+</tr>
+<tr>
+<td><strong>Rango IPv4</strong></td>
+<td>10.95.84.21        10.95.84.35</td>
+</tr>
+<tr>
+<td><strong>Template</strong></td>
+<td>DNS="10.95.121.180 10.95.43.86"<br />GATEWAY="10.95.84.1"<br />NETWORK_MASK="255.255.255.192"</td>
+</tr>
+<tr>
+<td><strong>OLN_SRV</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Bridge</strong></td>
+<td>br_srv</td>
+</tr>
+<tr>
+<td><strong>Rango MAC</strong></td>
+<td>02:00:0a:5f:54:51 - 02:00:0a:5f:54:5f</td>
+</tr>
+<tr>
+<td><strong>Rango IPv4</strong></td>
+<td>10.95.84.81 - 10.95.84.95</td>
+</tr>
+<tr>
+<td><strong>Rango IPv6</strong></td>
+<td>2a02:9008:4:b110:400:aff:fe5f:5451 - 2a02:9008:4:b110:400:aff:fe5f:545f</td>
+</tr>
+<tr>
+<td><strong>Template</strong></td>
+<td>GATEWAY="10.95.84.65"<br />GATEWAY6="2a02:9008:4:b110::1"<br />NETWORK_MASK="255.255.255.192"</td>
+</tr>
+<tr>
+<td><strong>OLN_PROV</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Bridge</strong></td>
+<td>br_prov</td>
+</tr>
+<tr>
+<td><strong>Rango MAC</strong></td>
+<td>02:00:00:00:00:01 - 02:00:00:00:00:02</td>
+</tr>
+<tr>
+<td><strong>Rango IPv6</strong></td>
+<td>2a02:9008:4:b117:400:ff:fe00:1 - 2a02:9008:4:b117:400:ff:fe00:2</td>
+</tr>
+<tr>
+<td><strong>OLN_CLI</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Bridge</strong></td>
+<td>br_cli</td>
+</tr>
+<tr>
+<td><strong>Rango MAC</strong></td>
+<td>02:00:00:00:01:00</td>
+</tr>
+<tr>
+<td><strong>OLN_SRV_ROUTER</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Bridge</strong></td>
+<td>br_srv</td>
+</tr>
+<tr>
+<td><strong>Rango MAC</strong></td>
+<td>00:00:00:00:00:01</td>
+</tr>
+<tr>
+<td><strong>Rango IPv6</strong></td>
+<td>2a02:9008:4:b110:200:ff:fe00:1</td>
+</tr>
+<tr>
+<td><strong>Template</strong></td>
+<td>GATEWAY6="2a02:9008:4:b110::4"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>
+Tabla 7.</strong> Resumen de los cambios en los ficheros de configuración.</p>
+<h2 id="usuarios-y-grupos"><span id="h.p8l5h3v5p9n1" class="anchor"><span id="_Toc453070016" class="anchor"></span></span>Usuarios y Grupos</h2>
+<p>Existe un único usuario: <em>oneadmin</em>, al cual le pertenecen todos los recursos.</p>
+<h2 id="servicios-maquinas-virtuales-y-templates"><span id="h.p8l5h3v5p9n1" class="anchor"><span id="_Toc453070016" class="anchor"></span></span>Servicios: Máquinas Virtuales y Templates</h2>
+<p>A continuación se detalla la lista de servicios que son ejecutados como Máquinas Virtuales. Aunque se hace referencia únicamente la Máquina Virtual, siempre existe un Template específico asociado a cada servicio.</p>
+<p>TODO: Contexto General</p>
+<h3 id="portal-cautivo-y-vnc">Portal Cautivo y VNC</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Portal Cautivo</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Capacidad</strong></td>
+<td>-   CPU = 0.1             <br />-   MEMORY = 1024</td>
+</tr>
+<tr>
+<td><strong>Discos</strong></td>
+<td>-   Ubuntu-14.04 / 10G</td>
+</tr>
+<tr>
+<td><strong>Redes</strong></td>
+<td>-   OLN_MGMT             <br />-   IPv4: 10.95.84.35  <br />-   OLN_SRV:              <br />-   IPv4: 10.95.84.95                <br />-   IPv6: 2a02:9008:4:b110:400:aff:fe5f:545f  <br />-   OLN_PROV:             <br />-   MAC: 02:00:00:00:00:01          <br />-   IPv6: 2a02:9008:4:b117:400:ff:fe00:1</td>
+</tr>
+<tr>
+<td><strong>Requisitos</strong></td>
+<td>Hipervisor <em>test-oln-hn-01</em></td>
+</tr>
+</tbody>
+</table>
 <h2 id="onos-telcaria"><span id="h.kpizvyontccm" class="anchor"><span id="_Toc453070017" class="anchor"></span></span>ONOS (Telcaria)</h2>
 <h3 id="_2"></h3>
 <h2 id="ensamblaje-del-bastidor">Ensamblaje del bastidor</h2>
