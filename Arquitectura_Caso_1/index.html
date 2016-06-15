@@ -526,7 +526,7 @@
 <p>En la implementación para CORD y para facilitar el desarrollo de las varias aplicaciones, se han ejecutado dos instancias de ONOS separando el control del tejido del resto de aplicaciones de servicio, lo recomendado por ON.Lab es utilizar una instancia de ONOS para controlar CORD, y es lo que hemos planificado para la CTpd.</p>
 <p><strong><span style="font-variant:small-caps;">Infraestructura y programas del tejido</span></strong></p>
 <p>Los conmutadores en el tejido se apalancan y utilizan infraestructura y programas de varios proyectos con licencias abiertas, tal como se ilustra a continuación.</p>
-<p><embed src="./media/image15.emf" width="472" height="294" /></p>
+<p><embed src="./media/image16.png" width="472" height="294" /></p>
 <p><span id="_Toc453152831" class="anchor"></span>Ilustración 12 Infraestructura y programas del tejido</p>
 <p>Todos los conmutadores son idénticos, utilizan los mismos programas de control, gestión y conmutación, la única diferencia es su posición en el tejido, esta solución fue propuesta y desarrollada en el proyecto Atrium de la ONF, e incluye los componentes utilizados en esta solución, ONL y ONIE como sistema operativo de los conmutadores, también utiliza el OF-DPA de Broadcom para abrir varias de sus interfaces propietarias en términos entendibles por OpenFlow y que se encuentran en su SDK. Esto permite que, en este caso, ONOS pueda programar todas las tablas de encaminamiento en el ASIC del conmutador, para así poder utilizar toda la funcionalidad existente en los ASIC de nueva generación.</p>
 <p><strong><span style="font-variant:small-caps;">Soporte del tejido para la comunicación entre la OLT y el vSG</span></strong></p>
