@@ -99,7 +99,23 @@
         
             <li><a href="#decisiones-de-diseno-y-tecnologicas">Decisiones de diseño y tecnológicas</a></li>
         
-            <li><a href="#sistema-de-supervision-y-gestion">Sistema de supervisión y gestión</a></li>
+            <li><a href="#infraestructura-ctpd">Infraestructura CTpd</a></li>
+        
+            <li><a href="#programas-sistema-onlife-ct">Programas – Sistema Onlife C.T.</a></li>
+        
+            <li><a href="#servicios-todo-como-un-servicio">Servicios: todo como un servicio</a></li>
+        
+            <li><a href="#terminal-optico-virtual-volt">Terminal óptico virtual - vOLT</a></li>
+        
+            <li><a href="#enrutador-de-central-virtualizado-erc">Enrutador de Central virtualizado - ErC</a></li>
+        
+            <li><a href="#vpdc-pasarela-de-cliente-equivalente-al-vsg-de-cord">vPdC Pasarela de Cliente equivalente al vSG de CORD</a></li>
+        
+            <li><a href="#tejido-clos-virtualizacion-y-composicion-de-servicios">Tejido CLOS, virtualización y composición de servicios</a></li>
+        
+            <li><a href="#sistema-de-supervision-y-gestion-en-desarrollo">Sistema de supervisión y gestión – en desarrollo</a></li>
+        
+            <li><a href="#integracion">Integración</a></li>
         
             <li><a href="#definicion-y-dimensionamiento-de-componentes">Definición y dimensionamiento de componentes</a></li>
         
@@ -110,23 +126,25 @@
 
 <h1 id="_1"><img src="./media/image1.png" width="521" height="451" /></h1>
 <p><strong>Tabla de ilustraciones</strong></p>
-<p><a href="#_Toc453152820"><em>Ilustración 1 Arquitectura objetivo de la red programable</em> 2</a></p>
-<p><a href="#_Toc453152821"><em>Ilustración 2 Fases del proyecto OnLife Network</em> 3</a></p>
-<p><a href="#_Toc453152822"><em>Ilustración 3 Simplificación de protocolos de la red de servicios programables</em> 3</a></p>
-<p><a href="#_Toc453152823"><em>Ilustración 4 Diagrama arquitectónico de los servicios residenciales del caso 1</em> 4</a></p>
-<p><a href="#_Toc453152824"><em>Ilustración 5 Arquitectura del sistema de administración y gestión</em> 5</a></p>
-<p><a href="#_Toc453152825"><em>Ilustración 6 Producto, servicio y recurso en procesos eTOM modificado</em> 10</a></p>
-<p><a href="#_Toc453152826"><em>Ilustración 7 Descomposición del terminal óptico de la C.T.</em> 13</a></p>
-<p><a href="#_Toc453152827"><em>Ilustración 8 Arquitectura del circuito de acceso PON</em> 14</a></p>
-<p><a href="#_Toc453152828"><em>Ilustración 9 Circuito de control del enrutador</em> 15</a></p>
-<p><a href="#_Toc453152829"><em>Ilustración 10 Arquitectura de la red IPv6 del hogar</em> 17</a></p>
-<p><a href="#_Toc453152830"><em>Ilustración 11 Adaptar el controlador del tejido a IPv6</em> 18</a></p>
-<p><a href="#_Toc453152831"><em>Ilustración 12 Infraestructura y programas del tejido</em> 19</a></p>
-<p><a href="#_Toc453152832"><em>Ilustración 13 Entorno de gestión de la CTpd (pendiente)</em> 21</a></p>
+<p><a href="#_Toc453773425"><em>Ilustración 1 Arquitectura objetivo de la red programable</em> 2</a></p>
+<p><a href="#_Toc453773426"><em>Ilustración 2 Fases del proyecto OnLife Network</em> 3</a></p>
+<p><a href="#_Toc453773427"><em>Ilustración 3 Simplificación de protocolos de la red de servicios programables</em> 3</a></p>
+<p><a href="#_Toc453773428"><em>Ilustración 4 Diagrama arquitectónico de los servicios residenciales del caso 1</em> 4</a></p>
+<p><a href="#_Toc453773429"><em>Ilustración 5 Arquitectura del sistema de administración y gestión</em> 5</a></p>
+<p><a href="#_Toc453773430"><em>Ilustración 6 Beneficios de la CTpd</em> 5</a></p>
+<p><a href="#_Toc453773431"><em>Ilustración 7 Producto, servicio y recurso en procesos eTOM modificado</em> 11</a></p>
+<p><a href="#_Toc453773432"><em>Ilustración 8 Ejemplo de grafo de un servicio</em> 12</a></p>
+<p><a href="#_Toc453773433"><em>Ilustración 9 Descomposición del terminal óptico de la C.T.</em> 14</a></p>
+<p><a href="#_Toc453773434"><em>Ilustración 10 Arquitectura del circuito de acceso PON</em> 15</a></p>
+<p><a href="#_Toc453773435"><em>Ilustración 11 Circuito de control del enrutador</em> 16</a></p>
+<p><a href="#_Toc453773436"><em>Ilustración 12 Arquitectura de la red IPv6 del hogar</em> 18</a></p>
+<p><a href="#_Toc453773437"><em>Ilustración 13 Adaptar el controlador del tejido a IPv6</em> 19</a></p>
+<p><a href="#_Toc453773438"><em>Ilustración 14 Infraestructura y programas del tejido</em> 19</a></p>
+<p><a href="#_Toc453773439"><em>Ilustración 15 Entorno de gestión de la CTpd (pendiente)</em> 21</a></p>
 <h1 id="prueba-de-concepto-del-onlife-network">Prueba de concepto del Onlife Network</h1>
 <p>La idea de estas pruebas se fundamenta en una arquitectura de red de servicios programables, con casos de uso de servicios extremo a extremo y no en la utilización de componentes aislados de la red o los sistemas; de esta manera nos aseguramos que cumplimos con las expectativas de las distintas áreas usuarias de nuestros recursos tecnológicos.</p>
 <p><img src="./media/image2.png" width="548" height="319" /></p>
-<p><span id="_Toc453152820" class="anchor"></span>Ilustración 1 Arquitectura objetivo de la red programable</p>
+<p><span id="_Toc453773425" class="anchor"></span>Ilustración Arquitectura objetivo de la red programable</p>
 <p>La motivación es realizar una prueba de concepto que nos permita validar las siguientes hipótesis,</p>
 <ul>
 <li>
@@ -150,23 +168,24 @@
 </ul>
 <p>El proyecto OnLife Network se ha planificado en varias fases coincidentes con la metodología establecida en la Innovation Call 2016 que consta de varias fases. En la primera fase nos dedicaremos a comprobar y validar las hipótesis propuestas en un entorno de laboratorio. En la segunda fase se espera realizar pruebas de campo en los entornos de prueba de Telefónica de España.</p>
 <p><img src="./media/image3.png" width="623" height="390" /></p>
-<p><span id="_Toc453152821" class="anchor"></span>Ilustración 2 Fases del proyecto OnLife Network</p>
+<p><span id="_Toc453773426" class="anchor"></span>Ilustración Fases del proyecto OnLife Network</p>
 <p>Esto requiere de una simplificación extrema de la red que hemos venido construyendo a lo largo de los años, la siguiente figura ilustra el impacto de esta arquitectura en el entorno de una central telefónica.</p>
 <p><img src="./media/image4.png" width="548" height="329" /></p>
-<p><span id="_Toc453152822" class="anchor"></span>Ilustración 3 Simplificación de protocolos de la red de servicios programables</p>
+<p><span id="_Toc453773427" class="anchor"></span>Ilustración Simplificación de protocolos de la red de servicios programables</p>
 <h2 id="acondicionar-la-ct-como-un-centro-de-servicios-programables">Acondicionar la C.T. como un centro de servicios programables</h2>
 <p>Este caso de uso se centra en la provisión de servicios de conectividad residenciales desde una central telefónica utilizando virtualización, ciberconectividad y procesamiento en la nube; teniendo en cuenta que las tres vertientes tecnológicas suman un todo dentro de la central haciéndola un ente autónomo.</p>
 <p>El caso es similar a uno patrocinado por AT&amp;T y demostrado exitosamente en el Open Networking Summit 2016, nosotros vamos a modificar ciertos componentes para flexibilizar la solución basados en conceptos similares a los utilizados por Deutsche Telekom en su híper simplificación de la red, con el claro objetivo de hacer despliegue más sencillo y estable.</p>
 <p>Utilizando la última versión de ONOS CORD, la solución de código abierto para operadores que está desarrollando el ON.Lab, vamos a facilitar la adecuación a nuestra arquitectura objetivo de los casos de uso y aprovechar en la medida de lo factible el desarrollo que ya está disponible.</p>
 <p><img src="./media/image5.png" width="548" height="305" /></p>
-<p><span id="_Toc453152823" class="anchor"></span>Ilustración 4 Diagrama arquitectónico de los servicios residenciales del caso 1</p>
+<p><span id="_Toc453773428" class="anchor"></span>Ilustración Diagrama arquitectónico de los servicios residenciales del caso 1</p>
 <p>La nebulización de funciones de red (NFaaS) se realizará con una visión de servicio, contrario a la virtualización de elementos aislados e inconexos que están haciendo algunos fabricantes tradicionales. El caso de uso se enfocará en una red de acceso GPON, pero que sin mayor esfuerzo o coste puede migrar a XGS-PON.</p>
 <p>A diferencia de la propuesta de arquitectura del ETSI, cuya integración con elementos legados está encontrando demasiadas dificultades, debido en gran parte a la complejidad de su diseño y el no haber tenido en cuenta desde un inicio el ingrediente fundamental de la ciberconectividad; nosotros vamos a resolver el caso de uso en el plano de los servicios y no de sus componentes, utilizando componentes virtuales menos complejos y mejor adecuados a la funcionalidad que exigen la ciberconectividad y la programabilidad de la nueva red en un entorno de nube come se muestra en la siguiente ilustración.</p>
 <p><img src="./media/image6.png" width="548" height="337" /></p>
-<p><span id="_Toc453152824" class="anchor"></span>Ilustración 5 Arquitectura del sistema de administración y gestión</p>
+<p><span id="_Toc453773429" class="anchor"></span>Ilustración Arquitectura del sistema de administración y gestión</p>
 <h2 id="requisitos-y-beneficios">Requisitos y beneficios</h2>
 <p>Para asegurar su validez, la prueba de campo deberá demostrar los siguientes beneficios</p>
 <p><img src="./media/image7.png" width="548" height="333" /></p>
+<p><span id="_Toc453773430" class="anchor"></span>Ilustración Beneficios de la CTpd</p>
 <p>Y al igual que CORD hemos tenido en cuenta cumplir con 5 requisitos básicos:</p>
 <p><strong><span style="font-variant:small-caps;">Habilitar servicios innovadores</span></strong></p>
 <p>La CTpd como un centro de servicios programables debe habilitar un amplio abanico de servicios, no limitados a servicios de acceso ni debe constreñir sin necesidad la implementación de nuevos servicios. Específicamente la CTpd debe habilitar servicios extraídos de estos vértices:</p>
@@ -215,11 +234,7 @@
 </tr>
 <tr>
 <td><strong>Evitar interfaces internas</strong></td>
-<td>Minimizar el número de interfaces internas o de interconexión.</td>
-</tr>
-<tr>
-<td>Distribuir las interconexiones a internet, entregar el tráfico saliente rápidamente</td>
-<td></td>
+<td>Minimizar el número de interfaces internas o de interconexión. <br /> Distribuir las interconexiones a internet, entregar el tráfico saliente rápidamente</td>
 </tr>
 <tr>
 <td><strong>Gestionada alrededor de dispositivos y su lógica </strong></td>
@@ -231,15 +246,19 @@
 </tr>
 <tr>
 <td><strong>Utilizar IPv6 para todas las funciones y servicios internos</strong></td>
-<td>En la red no se soportará IPv4 nativo que se convierte en un servicio</td>
+<td>En la red no se soportará IPv4 nativo que se convierte en un servicio. <br />El “servicio Ethernet de operadora” basado en IPv6</td>
+</tr>
+<tr>
+<td><strong>Rutas determinísticas y la más corta para todo el tráfico en red</strong></td>
+<td>Las tramas de red serán gestionadas por ONOS de acuerdo a las plantillas de tráfico establecidas por los planificadores</td>
+</tr>
+<tr>
+<td><strong>Los CPD están conectados directamente a los CTpd</strong></td>
+<td>Los CPD están directamente conectados a las CTPd para evitar construir interfaces internas adicionales para los grandes flujos de tráfico</td>
 </tr>
 </tbody>
 </table>
-<pre><code>                                                                                     El “servicio Ethernet de operadora” basado en IPv6                                                                                                                                   |
-</code></pre>
-<p>| <strong>Rutas determinísticas y la más corta para todo el tráfico en red</strong>                  | Las tramas de red serán gestionadas por ONOS de acuerdo a las plantillas de tráfico establecidas por los planificadores                                                             |
-| <strong>Los CPD están conectados directamente a los CTpd</strong>                                  | Los CPD están directamente conectados a las CTPd para evitar construir interfaces internas adicionales para los grandes flujos de tráfico                                           |</p>
-<h3 id="infraestructura-ctpd">Infraestructura CTpd</h3>
+<h2 id="infraestructura-ctpd">Infraestructura CTpd</h2>
 <p>La solución se apoya en infraestructura marca blanca especificada bajo los auspicios del Open Compute Project, toda la infraestructura está montada en bastidores Open CloudServer, que permite un despliegue sencillo y robusto en una central telefónica.</p>
 <p><strong><span style="font-variant:small-caps;">Dispositivos Marco Polo</span></strong></p>
 <p>La solución propuesta consta de 3 elementos que ya han sido especificados por el OCP y están disponibles comercialmente:</p>
@@ -280,7 +299,7 @@
 <p>Ocho servidores con suficiente capacidad para integrar posibles servicios de empresa que queramos integrar de manera independiente y también realizar pruebas con servicios de terceros como Microsoft Office 365, Akamai o Facebook.</p>
 </li>
 </ul>
-<h3 id="programas-sistema-onlife-ct">Programas – Sistema Onlife C.T.</h3>
+<h2 id="programas-sistema-onlife-ct">Programas – Sistema Onlife C.T.</h2>
 <p>El sistema de la CTpd se ha formulado en la integración de proyectos en código abierto, pero manteniendo la simplicidad de las soluciones evitando la creación innecesaria de interfaces o capas de gestión que los sistemas seleccionados deberían ya tener solucionados.</p>
 <p><strong><span style="font-variant:small-caps;">Núcleo</span></strong></p>
 <p>Los componentes seleccionados para esta primera implementación y realizada en base a la documentación disponible y la facilidad con que se puede adecuar las soluciones a nuestras necesidades:</p>
@@ -327,7 +346,7 @@
 <p><strong>Aura vCDN</strong> – es un servicio de CDN en el borde desarrollado por Akamai y que su despliegue es dinámico y elástico ajustándose a la demanda del momento en la geografía servida por la CTpd</p>
 </li>
 </ul>
-<h3 id="servicios-todo-como-un-servicio">Servicios: todo como un servicio</h3>
+<h2 id="servicios-todo-como-un-servicio">Servicios: todo como un servicio</h2>
 <p>De los conceptos de nebulización que convierten la infraestructura o las plataformas en un servicio y del que Amazon, Google y Microsoft son ahora referentes, utilizaremos en la CTpd la visión de que “todo es un servicio” y lo trataremos tal cual, lo que nos permite ofrecer soluciones que conjuntan la virtualización de funciones de red, la ciberconectividad y los recursos compartidos en un todo al que abstraemos en términos de servicio.</p>
 <p>Como los servicios a los que estamos acostumbrados a provisionar en nuestras redes, estos servicios OnLife debemos crearlos y componerlos en productos para ofrecerlos a nuestros clientes; estos nuevos servicios conllevan un par de retos, el primero, los recursos en los que se apoyan pasan de ser infraestructura monolítica a funcionar en infraestructura Marco Polo, y segundo, debemos amalgamar la nueva infraestructura con los nuevos componentes lógicos para poder estar a la altura de Amazon, Google o Microsoft a la hora de ofrecer nuestros servicios.</p>
 <p>Considerando todo como un servicio, lo que estamos haciendo es traer la oferta de la nube tradicional al terreno de Telefónica, o cualquier otro operador de telecomunicaciones, pasando de alquilar infraestructura (IaaS) o plataformas (PaaS), a proveer servicios de extremo a extremo en la red de acceso. Apalancados en la proximidad geográfica de nuestras centrales al consumidor de datos, ofreceremos estos servicios en ambas direcciones, a nuestros abonados y a los suministradores de contenido.</p>
@@ -344,7 +363,7 @@
 </li>
 </ul>
 <p><img src="./media/image8.png" width="472" height="252" /></p>
-<p><span id="_Toc453152825" class="anchor"></span>Ilustración 6 Producto, servicio y recurso en procesos eTOM modificado</p>
+<p><span id="_Toc453773431" class="anchor"></span>Ilustración Producto, servicio y recurso en procesos eTOM modificado</p>
 <p>Para que esta concepción del sistema propuesto sea realizable debemos asumir e incluir en el desarrollo las pautas descritas a continuación,</p>
 <ul>
 <li>
@@ -382,7 +401,7 @@
 </li>
 </ul>
 <p><strong><span style="font-variant:small-caps;">Capas de abstracción</span></strong></p>
-<p>Para su gestión creamos una abstracción de las varias capas de los servicios, lo que nos permite pensar en un concepto que podemos denominar plano de control del servicio. En el caso de CORD se ha desarrollado el sistema XOS, que es el mecanismo que realiza la representación de la estructura de los servicios, este contiene un lenguaje para escribir programas de control, y un ejecutable que aplica estas políticas en el sistema operativo</p>
+<p>Para su gestión creamos una abstracción de las varias capas de los servicios, lo que nos permite pensar en un concepto que podemos denominar plano de control del servicio. En el caso de la CTPd hemos utilizado OneFlow, dentro de OpenNebula, como el mecanismo que realiza la representación de la estructura de los servicios, este contiene un lenguaje para escribir programas de control, y un ejecutable que aplica estas políticas en el sistema operativo</p>
 <ul>
 <li>
 <p>Modelo de datos autoritativo basado en Django</p>
@@ -396,11 +415,12 @@
 </ul>
 <p>ONOS define una abstracción del grafo de la red en un conjunto de conmutadores marca blanca, ONE define un conjunto de primitivas de recursos de la nube sobre unos servidores marca blanca, y sobre esta base dual, la CTpd define tres capas de abstracción que podemos resumir así.</p>
 <ul>
-<li>El <em>grafo del servicio</em> existente en CORD, pendiente de adaptar a nuestra arquitectura y diseño, representa la relación de dependencia ente un conjunto de servicios que a la vez conforman un producto. CORD modela la composición del servicio como una relación de tenencia entre un servicio básico y un servicio de tenencia. La tenencia del servicio está anclada a un <em>Tenedor Principal</em>, como sería un abonado, que está unido a una o más <em>cuentas de usuario</em>.</li>
+<li>El <em>grafo del servicio</em> existente en la CTpd, representa la relación de dependencia entre un conjunto de servicios que a la vez conforman un producto. CTpd modela la composición del servicio como una relación de tenencia entre un servicio básico y un servicio de tenencia. La tenencia del servicio está anclada a un <em>Tenedor Principal</em>, como sería un abonado, que está unido a una o más <em>cuentas de usuario</em>.</li>
 </ul>
 <blockquote>
-<p><embed src="./media/image9.png" width="472" height="157" /></p>
+<p><img src="./media/image9.png" width="472" height="179" /></p>
 </blockquote>
+<p><span id="_Toc453773432" class="anchor"></span>Ilustración Ejemplo de grafo de un servicio</p>
 <ul>
 <li>
 <p>El <em>servicio</em> representa un programa multitenencia, elásticamente escalable, incluyendo la manera de instanciarle, controlarle y escalar su funcionalidad. CORD modela un servicio como un <em>controlador de servicio</em> que exporta una interfaz multitenencia y un conjunto de <em>instancias del servicio</em> que es elásticamente escalable, y que colectivamente se instancian en una <em>rebanada</em>.</p>
@@ -412,18 +432,18 @@
 <p>Un <em>circuito virtual</em> representa una interconexión de comunicación entre un conjunto de instancias, se soportan varios tipos de circuitos virtuales, incluyéndose los <em>privados</em> que conectan instancias con una rebanada, de <em>acceso directo</em> utilizado por un servicio de tenencia para acceder a un servicio básico direccionando directamente cada instancia del servicio básico, y de <em>acceso indirecto</em> utilizado por servicio de tenencia para acceder al servicio básico direccionando el servicio como un todo.</p>
 </li>
 </ul>
-<p>El mecanismo subyacente en la CTpd que soporta los Circuitos Virtuales se implementa con un par de aplicaciones de control que corren en ONOS. La primera de ellas, llamada VTN, instala reglas de flujo en los OvS que corren en cada servidor para implementar el direccionamiento directo o indirecto. La segunda es Forwarding e implementa flujos entre los servidores y otrs dispositivos físicos de la central a través del tejido de conmutación.</p>
-<h3 id="terminal-optico-virtual-volt">Terminal óptico virtual - vOLT</h3>
+<p>El mecanismo subyacente en la CTpd que soporta los Circuitos Virtuales se implementa con un par de aplicaciones de control que corren en ONOS. La primera de ellas, llamada VTN, instala reglas de flujo en los OvS que corren en cada servidor para implementar el direccionamiento directo o indirecto. La segunda es Forwarding e implementa flujos entre los servidores y otros dispositivos físicos de la central a través del tejido de conmutación.</p>
+<h2 id="terminal-optico-virtual-volt">Terminal óptico virtual - vOLT</h2>
 <p>Este concepto en ONOS es producto de desmantelar los actuales terminales ópticos monolíticos de las centrales, por una combinación de silicón Marco Polo y una aplicación de código abierto. La primera implementación se ha enfocado en el acceso GPON, pero es igualmente extrapolable a XGS-PON remplazando la bandeja de silicón, algo que AT&amp;T ya ha especificado dentro del Open Compute Project.</p>
 <p>Las bandejas de puertos ópticos GPON fabricados bajo la especificación de AT&amp;T dentro del OCP ya están disponibles en mercado, el proveedor es Celestica quien cuenta con plantas de fabricación en Valencia. La bandeja incluye los microcircuitos esenciales de GPON MAC controlados por un programa de control remoto que a su vez es gestionado vía OpenFlow por una aplicación de alto nivel.</p>
-<p><img src="./media/image10.png" width="548" height="345" /></p>
-<p><span id="_Toc453152826" class="anchor"></span>Ilustración 7 Descomposición del terminal óptico de la C.T.</p>
+<p><img src="./media/image10.png" width="472" height="297" /></p>
+<p><span id="_Toc453773433" class="anchor"></span>Ilustración Descomposición del terminal óptico de la C.T.</p>
 <p>Hay dos piezas de código que funcionan conjuntamente para implementar la funcionalidad del vOLT. La primera es un agente vOLT que se instancia en una máquina virtual y facilita la conexión entre ONOS y el equipo, este agente expone hacia arriba una interfaz OpenFlow lo que permite que sea controlado por ONOS; de ahí mapea lo mensajes OF a las API nativas del equipo y mensajes OCMI que gestionan las ONT de la red óptica pasiva. La segunda pieza de código es un conjunto de funciones que gestionan algunas de las funciones tradicionales de una terminal óptica, como 802.1X, IGMP Snooping, puentes VLAN y OAM; estas funciones de control están implementadas como aplicaciones que se ejecutan sobre ONOS, facilitan instanciar un abonado, autenticación.</p>
 <p><strong><span style="font-variant:small-caps;">Arquitectura del circuito de acceso GPON</span></strong></p>
 <p>El tráfico de los abonados se identifica dentro de la central telefónica por dos etiquetas en los circuitos virtuales, el terminal óptico en destino y en la central son responsables del etiquetado y desetiquetado del tráfico de cada abonado en lo que este va y viene; ONOS le instruye a la OLT que circuito utilizar mediante mensajes OpenFlow.</p>
 <p>La siguiente ilustración muestra donde ocurre el etiquetado según el tráfico transita desde la sede del abonado hasta internet. Dentro del hogar no hay etiquetas…</p>
 <p><img src="./media/image11.png" width="548" height="243" /></p>
-<p><span id="_Toc453152827" class="anchor"></span>Ilustración 8 Arquitectura del circuito de acceso PON</p>
+<p><span id="_Toc453773434" class="anchor"></span>Ilustración Arquitectura del circuito de acceso PON</p>
 <p><strong><span style="font-variant:small-caps;">Componentes lógicos</span></strong></p>
 <p><em>Agente vOLT</em></p>
 <p>Este agente está construido con <em>Indigo</em>, <em>netconfd</em>, las interfaces propietarias del silicón de PMC Sierra, ahora MicroSemi, y una pila OMCI.</p>
@@ -436,7 +456,7 @@
 <p>AAA (onos-app-aaa) tramita la autenticación entre el dispositivo del hogar y el servidor Radius; cuando el usuario ha sido autorizado, la aplicación debe instanciar los servicios del usuario en OneFlow</p>
 </li>
 </ul>
-<h3 id="enrutador-de-central-virtualizado-erc">Enrutador de Central virtualizado - <strong><span style="font-variant:small-caps;">ErC</span></strong></h3>
+<h2 id="enrutador-de-central-virtualizado-erc">Enrutador de Central virtualizado - <strong><span style="font-variant:small-caps;">ErC</span></strong></h2>
 <p>Esta aplicación de control de la red se ejecuta en ONOS y es la encargada de agregar los circuitos de los abonados y canalizar el tráfico desde/hacia la red de transporte. Como es de esperar esta aplicación, que la podemos visualizar como un servicio, debe modificarse para acomodar las necesidades específicas de las redes de transporte de Telefónica y de la red de transporte de Telefónica de España para este case de uso. En CORD esta aplicación se conoce como vRouter.</p>
 <p><strong><span style="font-variant:small-caps;">Requisitos del ErC</span></strong></p>
 <ul>
@@ -464,21 +484,21 @@
 <p>El diseño de este plano de control es similar a la aproximación utilizada en la aplicación ONOS SDN-IP, es decir utilizando la filosofía de construir sobre bloques ya desarrollados. La diferencia reside en que necesitamos soportar más que BGP, porque necesitamos también soportar un protocolo de pasarela interior, <em>Interior Gateway Protocol (IGP)</em> y como mencionamos arriba utilizamos la interfaz FPM para comunicar Quagga y ONOS mientras que en la SDN-IP se utiliza iBGP como conexión.</p>
 <p><em>Circuito de control</em></p>
 <p>Para que Quagga se comunique con los enrutadores aguas arriba, cierto tráfico de control debe fluir entre el servidor Quagga y el enrutador externo. Previamente a intercambiar rutas, la primera tarea del <strong><span style="font-variant:small-caps;">ErC</span></strong> es programar el plano de datos para que este tráfico fluya. El servidor Quagga está conectado a un puerto en el plano de datos del <strong><span style="font-variant:small-caps;">ErC</span></strong>, y los paquetes de enrutamiento entrantes y salientes se direccionan a ese puerto; esto permite circunvenir la función usual de enrutamiento del <strong><span style="font-variant:small-caps;">ErC</span></strong> porque este tráfico es de control destinado únicamente al enrutador mismo.</p>
-<p><embed src="./media/image12.png" width="377" height="222" /></p>
-<p><span id="_Toc453152828" class="anchor"></span>Ilustración 9 Circuito de control del enrutador</p>
+<p><img src="./media/image12.png" width="472" height="321" /></p>
+<p><span id="_Toc453773435" class="anchor"></span>Ilustración Circuito de control del enrutador</p>
 <p><em>Multidifusión</em></p>
 <p>El <strong><span style="font-variant:small-caps;">ErC</span></strong> necesita soportar señalización de multidifusión PIM-SSM aguas arriba, pero Quagga no gestionará PIM-SSM por lo que una aplicación dedicada de ONOS se hará cargo de gestionar los mensajes PIM.</p>
 <p><em>Plano de datos</em></p>
 <p>Por ahora la solución de CORD utiliza un conmutador dedicado para el plano de datos del vRouter y no utiliza el tejido CLOS, eso se hizo por razones de tiempo y aparente complejidad. En el <strong><span style="font-variant:small-caps;">ErC</span></strong> vamos a intentar resolver esto porque no tiene mucho sentido redundar conmutadores fuera del tejido, además el gestor del tejido dentro de ONOS debemos mejorarlo para que soporte NAT y QoS.</p>
-<h3 id="vpdc-pasarela-de-cliente-equivalente-al-vsg-de-cord">vPdC Pasarela de Cliente equivalente al vSG de CORD</h3>
+<h2 id="vpdc-pasarela-de-cliente-equivalente-al-vsg-de-cord">vPdC Pasarela de Cliente equivalente al vSG de CORD</h2>
 <p>La idea de mover a la C.T. parte de la funcionalidad del dispositivo de interconexión del hogar del cliente, no solo por temas de ahorro de coste mantenimiento, sino para poder ofrecer funcionalidad adicional que hoy no es posible ofertar debido en parte al alto coste de despliegue en casa del cliente.</p>
 <p>En esta primera fase la funcionalidad que se ha ofrece desde la CTpd se basa en Linux y se ejecutaría en la máquina virtual, o contenedor, de cada cliente. Por ahora son funciones básicas de conectividad con internet y algunos servicios de valor añadido, como suspender/reanudar, control parental, etc.</p>
 <p>La pasarela cumplirá con los principios de arquitectura del <a href="https://tools.ietf.org/html/rfc7368"><em>RFC 7368</em></a> “Redes IPv6 del hogar” que tiene permite tener múltiples subredes, por ejemplo, para facilitar tener una red privada y otra de invitados, capas de enlace heterogéneas, componentes inteligentes de servicios públicos, y tener suficiente espacio de direccionamiento disponible para permitir que cada dispositivo tenga una única dirección global. No se debe esperar que los usuarios en el hogar configuren sus redes, por tanto, el RFC 7368 asume que en la medida de lo posible la red del hogar se auto organiza y auto configura, es decir, que funcionará sin una gestión dedicada por parte del cliente residencial.</p>
 <p>Es importante distinguir entre direccionamiento y ser contactado, mientras IPv6 ofrece direccionamiento global mediante la utilización de direcciones únicas en el hogar, si un dispositivo puede ser contactado globalmente o no dependerá de algún cortafuegos o configuración de filtrado, y no de la presencia o utilización de un NAT como en IPv4.</p>
 <p>La vPdC también debe tener en cuenta lo descrito en el <a href="https://tools.ietf.org/html/rfc7084"><em>RFC 7084</em></a> “Requisitos básicos de los enrutadores IPv6 de cliente”, actuar como el borde entre la red del hogar y las redes externas, ser capaz de proporcionar prefijos para la creación de subredes dentro del hogar, gestionar eficientemente direcciones locales y direcciones globales de cada dispositivo.</p>
-<p><img src="./media/image13.png" width="548" height="288" /></p>
-<p><span id="_Toc453152829" class="anchor"></span>Ilustración 10 Arquitectura de la red IPv6 del hogar</p>
-<h3 id="tejido-clos-virtualizacion-y-composicion-de-servicios">Tejido CLOS, virtualización y composición de servicios</h3>
+<p><img src="./media/image13.png" width="473" height="246" /></p>
+<p><span id="_Toc453773436" class="anchor"></span>Ilustración Arquitectura de la red IPv6 del hogar</p>
+<h2 id="tejido-clos-virtualizacion-y-composicion-de-servicios">Tejido CLOS, virtualización y composición de servicios</h2>
 <p>La arquitectura de la CTpd y por ende del tejido CLOS tiene las siguientes características:</p>
 <ul>
 <li>
@@ -519,15 +539,15 @@
 </li>
 </ul>
 <p>La ventaja más notoria de utilizar un control de SDN común para la infraestructura suprayacente y para el tejido subyacente es que pueden ser orquestados conjuntamente para dar las prestaciones y servicios que demanda una Central Telefónica, con la agilidad y eficiencias de las operaciones de un CPD.</p>
-<p><img src="./media/image15.png" width="548" height="342" /></p>
-<p><span id="_Toc453152830" class="anchor"></span>Ilustración 11 Adaptar el controlador del tejido a IPv6</p>
+<p><img src="./media/image14.png" width="548" height="342" /></p>
+<p><span id="_Toc453773437" class="anchor"></span>Ilustración Adaptar el controlador del tejido a IPv6</p>
 <p><strong><span style="font-variant:small-caps;">Aplicaciones de control de ONOS</span></strong></p>
 <p>El tejido en el centro de este diseño es el encargado de interconectar todos los componentes de la CTpd, incluyendo las bandejas de acceso GPON, nodos de computación y las tarjetas de interconexión a la red de transporte. La aplicación de control del tejido se ejecuta sobre ONOS e interactúa con otras aplicaciones necesarias para proporcionar los varios servicios de la CTpd.</p>
 <p>En la implementación para CORD y para facilitar el desarrollo de las varias aplicaciones, se han ejecutado dos instancias de ONOS separando el control del tejido del resto de aplicaciones de servicio, lo recomendado por ON.Lab es utilizar una instancia de ONOS para controlar CORD, y es lo que hemos planificado para la CTpd.</p>
 <p><strong><span style="font-variant:small-caps;">Infraestructura y programas del tejido</span></strong></p>
 <p>Los conmutadores en el tejido se apalancan y utilizan infraestructura y programas de varios proyectos con licencias abiertas, tal como se ilustra a continuación.</p>
-<p><embed src="./media/image16.png" width="472" height="294" /></p>
-<p><span id="_Toc453152831" class="anchor"></span>Ilustración 12 Infraestructura y programas del tejido</p>
+<p><img src="./media/image15.png" width="472" height="242" /></p>
+<p><span id="_Toc453773438" class="anchor"></span>Ilustración Infraestructura y programas del tejido</p>
 <p>Todos los conmutadores son idénticos, utilizan los mismos programas de control, gestión y conmutación, la única diferencia es su posición en el tejido, esta solución fue propuesta y desarrollada en el proyecto Atrium de la ONF, e incluye los componentes utilizados en esta solución, ONL y ONIE como sistema operativo de los conmutadores, también utiliza el OF-DPA de Broadcom para abrir varias de sus interfaces propietarias en términos entendibles por OpenFlow y que se encuentran en su SDK. Esto permite que, en este caso, ONOS pueda programar todas las tablas de encaminamiento en el ASIC del conmutador, para así poder utilizar toda la funcionalidad existente en los ASIC de nueva generación.</p>
 <p><strong><span style="font-variant:small-caps;">Soporte del tejido para la comunicación entre la OLT y el vSG</span></strong></p>
 <p>Los abonados residenciales se conectan a la CTpd a través de la red de acceso GPON, y al descomponer la OLT monolítica, todas las funciones que se transforman en programas se trasladan a la nube, y una de ellas es el vSG.</p>
@@ -535,26 +555,22 @@
 <p>Esta infraestructura del acceso residencial es manejada por la aplicación de control vOLT, coordinada con OneFlow. Una vez que el cliente ha sido identificado y autenticado, las doble etiquetas del circuito asignadas para el cliente, y se ha instanciado su vSG en un nodo de cómputo, la aplicación que controla el tejido es informada de cuál es la OLT a donde está conectado el cliente y el nodo de computación donde se ha instanciado el vSG de cliente; entonces la aplicación programa las reglas de encaminamiento dentro del tejido que permiten que la comunicación fluya dentro del mismo.</p>
 <p><strong><span style="font-variant:small-caps;">Composición del servicio</span></strong></p>
 <p>Los servicios en la CTpd se ensamblan utilizando las mejores prácticas de las operaciones en la nube; los servicios los instancia el operador o gestor de red utilizando OneFlow, a su vez OneFlow le presenta a ONOS un grafo del servicio para el tráfico del abonado. Este grafo es luego descompuesto en reglas de tráfico que se programan en la infraestructura de red de la CTpd por la aplicación VTN de ONOS. En esta sección se hace un breve resumen de las alternativas de implementación hechas para realizar la composición del servicio en la infraestructura de red.</p>
-<p>En la CTpd la composición del servicio se implementa utilizando redes suprayacentes y virtualización de la red, brevemente,</p>
+<p>En la CTpd la composición del servicio se implementa utilizando redes suprayacentes y virtualización de la red, resumiendo sus características de esta manera,</p>
 <ul>
 <li>
 <p>Los servicios tienen su propio circuito virtual, CV – las máquinas virtuales o contenedores que instancian el servicio son parte del mismo CV, y estas instancias se pueden crear en cualquier lugar de la nube del CTpd, es decir en cualquier nodo de cómputo o en distintos bastidores</p>
 </li>
 <li>
-<p>Incrementar o reducir dinámicamente la cantidad de máquinas virtuales / contenedores, y por ende del mismo CV, esta característica es primordial para tener escalabilidad en la nube</p>
+<p>Es capaz de incrementar o menguar dinámicamente la cantidad de máquinas virtuales y contenedores, y en consecuencia el tamaño del mismo CV, esta característica es primordial para tener escalabilidad en la nube</p>
 </li>
 <li>
-<p>Cada nodo de cómputo aloja máquinas virtuales o contenedores, pertenecientes a CV de múltiples servicios, conectadas a OvS que actúan como conmutadores de hipervisor muy programables y controlados con OpenFlow</p>
+<p>Cada nodo de cómputo aloja máquinas virtuales o contenedores, pertenecientes a CVs de múltiples servicios, conectadas a OvS que actúan como conmutadores muy programables del hipervisor y controlados con OpenFlow</p>
 </li>
 <li>
-<p>Cada CV o servicio tiene su propio balanceador de carga distribuido a lo largo de cada OvS en la red. La función del balanceador de carga es seleccionar la instancia de una máquina virtual que está instanciando un servicio, entre todas las máquinas virtuales dentro del CV del servicio</p>
-</li>
-<li>
-<p>Proceso de composición de un servicio: Digamos que una máquina virtual S1B, que es una instancia en el CV Servicio 1, descubre que</p>
+<p>Cada CV o servicio tiene su propio balanceador de carga distribuido a lo largo de cada OvS en la red. La función del balanceador de carga es seleccionar la instancia de una máquina virtual que está instanciando un servicio, entre todas las máquinas virtuales dentro del CV del servicio<span id="h.i1otn9dplkzt" class="anchor"></span></p>
 </li>
 </ul>
-<h3 id="_2"></h3>
-<h2 id="sistema-de-supervision-y-gestion">Sistema de supervisión y gestión</h2>
+<h2 id="sistema-de-supervision-y-gestion-en-desarrollo">Sistema de supervisión y gestión – <em>en desarrollo</em></h2>
 <p>Este servicio debe ser capaz de supervisar, y si es necesario, analizar la marcha de distintos componentes de la CTpd en la prestación de los servicios encomendados. Los principales objetivos y requisitos de este sistema son</p>
 <ul>
 <li>
@@ -578,7 +594,7 @@
 </ul>
 <p>Como se muestra en la siguiente ilustración, el sistema de supervisión consigue la información de las sondas desde distintos elementos de red en la CTpd, incluyendo nodos de cómputo, conmutadores, dispositivos de acceso a central y servicios programables ejecutándose en los nodos de cómputo; poniéndola a disposición de otras aplicaciones de análisis ejecutándose en la CTpd. El sistema se integrará con los servicios residenciales como el vSG, el ErC, la vOLT, aunque la arquitectura permite extenderlo a futuras plataformas de la CTpd como el acceso móvil o empresarial.</p>
 <p><embed src="./media/image16.emf" width="548" height="345" /></p>
-<p><span id="_Toc453152832" class="anchor"></span>Ilustración Entorno de gestión de la CTpd (pendiente)</p>
+<p><span id="_Toc453773439" class="anchor"></span>Ilustración Entorno de gestión de la CTpd (pendiente)</p>
 <p>El sistema para la administración y gestión de la virtualización y ciberconectividad, así como su integración con los otros sistemas de gestión de la empresa, es clave para el éxito de estas soluciones, y a la vez está probando ser el punto de inflexión en las distintas integraciones que están intentando vender distintos fabricantes.</p>
 <p>Para mantener cierta independencia de los fabricantes tradicionales, vamos a utilizar componentes desarrollados en código abierto por comunidades de usuarios y no tanto por fabricantes tradicionales, esto nos permitirá conjuntar un sistema de administración más acorde con nuestras necesidades globales, pero que al mismo tiempo nos permita reutilizar infraestructura que ya está en producción. Para ello hemos seleccionado OpenNebula con ONOS, soluciones ambas muy ligeras de código pero con las prestaciones que necesita una operadora de telecomunicaciones, a diferencia de soluciones más comerciales como OpenStack, OpenDaylight u otras.</p>
 <p>Los componentes del sistema de gestión y administración a utilizar son:</p>
@@ -590,7 +606,7 @@
 <p><strong>ONOS</strong> – sistema operativo de la red desarrollado por ON.Lab, versión Cardinal o Drake</p>
 </li>
 </ul>
-<h3 id="integracion">Integración</h3>
+<h2 id="integracion">Integración</h2>
 <p>El sistema debe ser capaz de administrar una topología nube como la ilustrada</p>
 <p>Teniendo en cuenta que los emplazamientos pueden estar dispersos en una amplia zona geográfica de un país o pueden prestar servicios de una operadora a otra en el mismo o distintos continentes.</p>
 <h2 id="definicion-y-dimensionamiento-de-componentes">Definición y dimensionamiento de componentes</h2>
