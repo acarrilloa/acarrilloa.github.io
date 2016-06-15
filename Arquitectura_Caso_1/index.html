@@ -514,7 +514,7 @@
 <p>Utilizamos ECMP para el flujo de nivel 3 entre los bastidores</p>
 </li>
 <li>
-<p>VLAN cross-connect feature to switch QinQ packets entre las bandejas de acceso óptico y las instancias del vSG</p>
+<p>VLAN cross-connect feature to switch QinQ packets entre las bandejas de acceso óptico y las instancias del vPdC</p>
 </li>
 <li>
 <p>Multidifusión IPv6 para los flujos de IPTV desde las cabeceras de vídeo hasta los abonados</p>
@@ -549,10 +549,10 @@
 <p><img src="./media/image15.png" width="472" height="242" /></p>
 <p><span id="_Toc453773438" class="anchor"></span>Ilustración Infraestructura y programas del tejido</p>
 <p>Todos los conmutadores son idénticos, utilizan los mismos programas de control, gestión y conmutación, la única diferencia es su posición en el tejido, esta solución fue propuesta y desarrollada en el proyecto Atrium de la ONF, e incluye los componentes utilizados en esta solución, ONL y ONIE como sistema operativo de los conmutadores, también utiliza el OF-DPA de Broadcom para abrir varias de sus interfaces propietarias en términos entendibles por OpenFlow y que se encuentran en su SDK. Esto permite que, en este caso, ONOS pueda programar todas las tablas de encaminamiento en el ASIC del conmutador, para así poder utilizar toda la funcionalidad existente en los ASIC de nueva generación.</p>
-<p><strong><span style="font-variant:small-caps;">Soporte del tejido para la comunicación entre la OLT y el vSG</span></strong></p>
-<p>Los abonados residenciales se conectan a la CTpd a través de la red de acceso GPON, y al descomponer la OLT monolítica, todas las funciones que se transforman en programas se trasladan a la nube, y una de ellas es el vSG.</p>
+<p><strong><span style="font-variant:small-caps;">Soporte del tejido para la comunicación entre la OLT y el vPdC</span></strong></p>
+<p>Los abonados residenciales se conectan a la CTpd a través de la red de acceso GPON, y al descomponer la OLT monolítica, todas las funciones que se transforman en programas se trasladan a la nube, y una de ellas es el vPdC.</p>
 <p>Tal como describimos con anterioridad, el tráfico entre la cSG se etiqueta doblemente, con la etiqueta externa identificando la red PON a la que pertenece el abonado, y la etiqueta interior identifica al abonado individualmente.</p>
-<p>Esta infraestructura del acceso residencial es manejada por la aplicación de control vOLT, coordinada con OneFlow. Una vez que el cliente ha sido identificado y autenticado, las doble etiquetas del circuito asignadas para el cliente, y se ha instanciado su vSG en un nodo de cómputo, la aplicación que controla el tejido es informada de cuál es la OLT a donde está conectado el cliente y el nodo de computación donde se ha instanciado el vSG de cliente; entonces la aplicación programa las reglas de encaminamiento dentro del tejido que permiten que la comunicación fluya dentro del mismo.</p>
+<p>Esta infraestructura del acceso residencial es manejada por la aplicación de control vOLT, coordinada con OneFlow. Una vez que el cliente ha sido identificado y autenticado, las doble etiquetas del circuito asignadas para el cliente, y se ha instanciado su vPdC en un nodo de cómputo, la aplicación que controla el tejido es informada de cuál es la OLT a donde está conectado el cliente y el nodo de computación donde se ha instanciado el vPdC de cliente; entonces la aplicación programa las reglas de encaminamiento dentro del tejido que permiten que la comunicación fluya dentro del mismo.</p>
 <p><strong><span style="font-variant:small-caps;">Composición del servicio</span></strong></p>
 <p>Los servicios en la CTpd se ensamblan utilizando las mejores prácticas de las operaciones en la nube; los servicios los instancia el operador o gestor de red utilizando OneFlow, a su vez OneFlow le presenta a ONOS un grafo del servicio para el tráfico del abonado. Este grafo es luego descompuesto en reglas de tráfico que se programan en la infraestructura de red de la CTpd por la aplicación VTN de ONOS. En esta sección se hace un breve resumen de las alternativas de implementación hechas para realizar la composición del servicio en la infraestructura de red.</p>
 <p>En la CTpd la composición del servicio se implementa utilizando redes suprayacentes y virtualización de la red, resumiendo sus características de esta manera,</p>
@@ -592,7 +592,7 @@
 <p>Debe ser posible redireccionar los flujos de tráfico a través de una “sonda virtual” para obtener una inspección más profunda que no es posible obtener de los dispositivos subyacentes</p>
 </li>
 </ul>
-<p>Como se muestra en la siguiente ilustración, el sistema de supervisión consigue la información de las sondas desde distintos elementos de red en la CTpd, incluyendo nodos de cómputo, conmutadores, dispositivos de acceso a central y servicios programables ejecutándose en los nodos de cómputo; poniéndola a disposición de otras aplicaciones de análisis ejecutándose en la CTpd. El sistema se integrará con los servicios residenciales como el vSG, el ErC, la vOLT, aunque la arquitectura permite extenderlo a futuras plataformas de la CTpd como el acceso móvil o empresarial.</p>
+<p>Como se muestra en la siguiente ilustración, el sistema de supervisión consigue la información de las sondas desde distintos elementos de red en la CTpd, incluyendo nodos de cómputo, conmutadores, dispositivos de acceso a central y servicios programables ejecutándose en los nodos de cómputo; poniéndola a disposición de otras aplicaciones de análisis ejecutándose en la CTpd. El sistema se integrará con los servicios residenciales como el vPdC, el <strong><span style="font-variant:small-caps;">ErC</span></strong>, la vOLT, aunque la arquitectura permite extenderlo a futuras plataformas de la CTpd como el acceso móvil o empresarial.</p>
 <p><embed src="./media/image16.emf" width="548" height="345" /></p>
 <p><span id="_Toc453773439" class="anchor"></span>Ilustración Entorno de gestión de la CTpd (pendiente)</p>
 <p>El sistema para la administración y gestión de la virtualización y ciberconectividad, así como su integración con los otros sistemas de gestión de la empresa, es clave para el éxito de estas soluciones, y a la vez está probando ser el punto de inflexión en las distintas integraciones que están intentando vender distintos fabricantes.</p>
