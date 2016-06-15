@@ -399,7 +399,7 @@
 <li>El <em>grafo del servicio</em> existente en CORD, pendiente de adaptar a nuestra arquitectura y diseño, representa la relación de dependencia ente un conjunto de servicios que a la vez conforman un producto. CORD modela la composición del servicio como una relación de tenencia entre un servicio básico y un servicio de tenencia. La tenencia del servicio está anclada a un <em>Tenedor Principal</em>, como sería un abonado, que está unido a una o más <em>cuentas de usuario</em>.</li>
 </ul>
 <blockquote>
-<p><embed src="./media/image9.emf" width="472" height="157" /></p>
+<p><embed src="./media/image9.png" width="472" height="157" /></p>
 </blockquote>
 <ul>
 <li>
@@ -464,7 +464,7 @@
 <p>El diseño de este plano de control es similar a la aproximación utilizada en la aplicación ONOS SDN-IP, es decir utilizando la filosofía de construir sobre bloques ya desarrollados. La diferencia reside en que necesitamos soportar más que BGP, porque necesitamos también soportar un protocolo de pasarela interior, <em>Interior Gateway Protocol (IGP)</em> y como mencionamos arriba utilizamos la interfaz FPM para comunicar Quagga y ONOS mientras que en la SDN-IP se utiliza iBGP como conexión.</p>
 <p><em>Circuito de control</em></p>
 <p>Para que Quagga se comunique con los enrutadores aguas arriba, cierto tráfico de control debe fluir entre el servidor Quagga y el enrutador externo. Previamente a intercambiar rutas, la primera tarea del <strong><span style="font-variant:small-caps;">ErC</span></strong> es programar el plano de datos para que este tráfico fluya. El servidor Quagga está conectado a un puerto en el plano de datos del <strong><span style="font-variant:small-caps;">ErC</span></strong>, y los paquetes de enrutamiento entrantes y salientes se direccionan a ese puerto; esto permite circunvenir la función usual de enrutamiento del <strong><span style="font-variant:small-caps;">ErC</span></strong> porque este tráfico es de control destinado únicamente al enrutador mismo.</p>
-<p><embed src="./media/image12.emf" width="377" height="222" /></p>
+<p><embed src="./media/image12.png" width="377" height="222" /></p>
 <p><span id="_Toc453152828" class="anchor"></span>Ilustración 9 Circuito de control del enrutador</p>
 <p><em>Multidifusión</em></p>
 <p>El <strong><span style="font-variant:small-caps;">ErC</span></strong> necesita soportar señalización de multidifusión PIM-SSM aguas arriba, pero Quagga no gestionará PIM-SSM por lo que una aplicación dedicada de ONOS se hará cargo de gestionar los mensajes PIM.</p>
